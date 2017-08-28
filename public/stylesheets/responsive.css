@@ -1,0 +1,2330 @@
+/************************************************
+[Responsive Stylesheet]
+
+Project Name    : Beauty Lab
+Team & Company  : 
+Desgined By     : Saiful Islam
+Developed By    : AB Belal
+Date            : 02 May 2017
+*************************************************/
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /*================================================================
+                        01. Start Home page Responsive style
+     ==================================================================*/
+    /*-----header-------*/
+    .beauty .menuzord-brand {
+        margin: 16px 0px 0 0;
+        width: 180px;
+    }
+    .beauty .menuzord-brand>img {
+        width: 100%;
+    }
+    .beauty .menuzord-menu>li a {
+        font-size: 13px;
+    }
+    .beauty .menuzord-menu>li>.megamenu::before {
+        left: 27%;
+    }
+    /*------hero area version-4-------*/
+    .hero_area_v4 .single_hero_content p {
+        width: 50%;
+    }
+    .bgVideo .hero_content4_wrapper .single_hero_content h1 {
+        width: 63%;
+    }
+    /*-------welcome section-------*/
+    .section_title>p {
+        width: 55%;
+    }
+    .welcom_section .single_feature {
+        width: 46.2%;
+    }
+    .welcom_section_v2 .single_feature {
+        width: 29.2%;
+    }
+    .welcom_section .feature_content {
+        padding: 0 20px 0 11px;
+    }
+    .welcom_section_v2 .feature_content {
+        padding: 0 20px;
+    }
+    .welcom_section .single_feature:nth-child(2n) {
+        margin-left: 32px;
+    }
+    .welcom_section_v2 .single_feature {
+        margin-left: 40px!important;
+    }
+    .welcome_carousel_wrapper #carousel_text {
+        padding: 20px!important;
+    }
+    /*------booking section-------*/
+    .session_booking_section .session_booking_wrapper .form-control {
+        width: 47.6%;
+    }
+    #datetimepicker1 .form-control {
+        width: 115%;
+    }
+    /*------service section----------*/
+    .service_section .img_over_content {
+        padding: 7px 15px 7px;
+    }
+    .service_section .img_over_content a {
+        margin: 10px 0;
+    }
+    /*-----product carousel section------*/
+    .product_carousel_wrapper .single_carousel .product_hover {
+        padding: 20px;
+    }
+    /*-------blog section---------*/
+    .single_blog .brand ul li {
+        font-size: 15px;
+    }
+    .single_blog .brand ul li {
+        margin-right: 12px;
+    }
+    .single_blog li.gallery {
+        padding: 13px 16px !important;
+    }
+    .single_blog li.gallery a {
+        font-size: 18px !important;
+    }
+    /*================================================================
+                        01. End Home page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        02. Start Service page Responsive style
+     ==================================================================*/
+    .specialize_section .tooltipbar.bar1 {
+        left: 218px;
+        top: 61px;
+    }
+    .specialize_section .tooltipbar.bar2 {
+        bottom: 160px;
+        left: 90px;
+    }
+    .specialize_section .tooltipbar.bar3 {
+        bottom: 189px;
+        right: 100px;
+    }
+    /*--------pricing plan section----------*/
+    .price_plan_section .price_body {
+        padding: 10px 30px;
+    }
+    /*================================================================
+                        02. End Service page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        03. Start Service Details page Responsive style
+     ==================================================================*/
+    /*--------treatment_details_section section----------*/
+    .treatment_details_section .treatment_details p {
+        margin-top: 0;
+    }
+    .treatment_info_section:hover .treatment_info_img::before {
+        transform: scale(0.88, 0.87);
+    }
+    .treatment_info_section:hover .treatment_info_img::after {
+        transform: scale(0.79, 0.73);
+    }
+    .treatment_details_section:hover .treatment_details_img::before {
+        transform: scale(0.88, 0.89);
+    }
+    .treatment_details_section:hover .treatment_details_img::after {
+        transform: scale(0.8, 0.75);
+    }
+    /*================================================================
+                        03. End Service Details page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        04. Start Booking page Responsive style
+     ==================================================================*/
+    /*--------history section----------*/
+    .history_section:hover .history_img::after {
+        transform: scale(0.81, 0.77);
+    }
+    /*================================================================
+                        04. End Booking page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        05. Start Product page Responsive style
+     ==================================================================*/
+    .product_gallery .product_hover ul {
+        padding: 5px 20px;
+    }
+    .filtering_area .search_product input.form-control {
+        width: 335px;
+    }
+    /*----------product gallery version-2------------*/
+    .with_sidebar .filtering_area .search_product input.form-control {
+        width: 230px;
+    }
+    .with_sidebar .single_product {
+        width: 29.2%;
+    }
+    .product_gallery.with_sidebar .list_view .single_product .product_img {
+        width: 38.5%;
+    }
+    .with_sidebar .list_view .single_product {
+        width: 100%;
+    }
+    .list_view .product_price {
+        padding: 20px 30px;
+    }
+    aside .categorie .panel a {
+        font-size: 14px;
+        letter-spacing: 0.8px;
+    }
+    aside .categorie .panel a span {
+        margin-left: 0;
+    }
+    aside .categorie .panel .panel-body a {
+        line-height: 28px;
+    }
+    aside .categorie .panel .panel-body {
+        padding: 10px 10px 10px 10px;
+    }
+    aside .special_offer .offer_text p span {
+        font-size: 18px;
+    }
+    aside .single_block.tag li a {
+        letter-spacing: normal;
+        padding: 8px 6px;
+    }
+    /*================================================================
+                        05. End Product page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        06. Start blog page Responsive style
+     ==================================================================*/
+    .blog_post_wrapper .single_blog {
+        width: 45.3%;
+    }
+    .instagram_gallery a.venobox {
+        width: 30.6%;
+    }
+    .single_blog li.gallery {
+        padding: 13px 12px !important;
+    }
+    /*----------1col with sidebar-------*/
+    .col1_withSidebar .single_blog {
+        width: 100%;
+    }
+    .col1_withSidebar .single_blog .blog_content p {
+        width: 68%;
+    }
+    /*================================================================
+                        06. End blog page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        07. Start product details page Responsive style
+     ==================================================================*/
+    .product_details_wrapper .product_details_content .add_cart_area>li.qty {
+        display: block;
+        margin-bottom: 12px;
+    }
+    .product_details_wrapper .product_details_content .add_cart_area .qty input {
+        width: 64px;
+    }
+    .product_details_wrapper .product_details_content .add_cart_area>li:nth-child(2) a {
+        margin-left: 0;
+    }
+    /*================================================================
+                        07. End product details Responsive style
+     ==================================================================*/
+    .error_section .body_img {
+        width: 30%;
+    }
+}
+
+
+/*----------end 992-1199px media query----------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /*================================================================
+                        01. Start Home page Responsive style
+     ==================================================================*/
+    /*-------hero area version-4-------*/
+    .hero_area_v4 .single_hero_content h2 {
+        width: 60%;
+    }
+    .hero_area_v4 .single_hero_content p {
+        width: 70%;
+    }
+    .bgVideo .hero_content4_wrapper .single_hero_content h1 {
+        width: 73%;
+        font-size: 50px;
+        line-height: 53px;
+    }
+    /*---------slider section------*/
+    .hero_area.slider_wrapper {
+        margin-top: 68px;
+    }
+    .slider_wrapper .Modern-Slider .item h3 {
+        font-size: 50px;
+        line-height: 56px;
+    }
+    .slider_wrapper .Modern-Slider .item h4 {
+        font-size: 26px;
+    }
+    .Modern-Slider .slider_button a {
+        height: 50px;
+        line-height: 30px;
+        padding: 10px 38px;
+    }
+    .Modern-Slider .item h5 {
+        width: 70%;
+    }
+    /*-------welcome section-------*/
+    .welcom_section,
+    .service_section,
+    .beautyLab_gallery_section,
+    .product_carousel_section,
+    .priceing_section,
+    .blog_section,
+    .footer_widget_section {
+        padding: 70px 0 50px;
+    }
+    .section_title h3 {
+        font-size: 30px;
+    }
+    .section_title>p {
+        width: 75%;
+    }
+    .welcome_carousel_wrapper {
+        display: none;
+    }
+    /*------welcome section version-2-------------*/
+    .welcom_section_v2 .single_feature {
+        width: 44.7%;
+    }
+    .welcom_section_v2 .single_feature:nth-child(3n+3)::after {
+        display: block;
+    }
+    .welcom_section_v2 .single_feature:nth-child(3) {
+        padding-top: 35px;
+    }
+    .welcom_section_v2 .single_feature:nth-child(3)::before {
+        display: block;
+    }
+    .welcom_section_v2 .single_feature:nth-child(2n)::after {
+        display: none;
+    }
+    /*------booking section-------*/
+    .session_booking_section .session_booking_wrapper .form-control {
+        width: 47.6%;
+    }
+    #datetimepicker1 .form-control {
+        width: 115%;
+    }
+    /*------service section----------*/
+    .service_section .img_over_content {
+        padding: 7px 15px 7px;
+    }
+    .service_section .img_over_content a {
+        margin: 10px 0;
+    }
+    /*-----product carousel section------*/
+    .product_carousel_wrapper .single_carousel .product_hover {
+        padding: 20px;
+    }
+    .product_carousel_section {
+        padding-bottom: 160px;
+    }
+    .product_carousel_wrapper .owl-nav {
+        height: 48px;
+        left: 50%;
+        margin-left: -56px;
+        top: 260px;
+        width: 115px;
+    }
+    .product_carousel_wrapper .owl-prev,
+    .product_carousel_wrapper .owl-next {
+        padding: 11px 24.5px;
+    }
+    /*-------priceing section--------*/
+    .priceing_section .price_list_tab .tab_menu li a {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 7px 20px;
+    }
+    .priceing_section .section_title {
+        padding-bottom: 40px;
+    }
+    /*---------testimonial section----------*/
+    .testimonial_section .single_testimonial {
+        width: 100%;
+    }
+    /*-------blog section---------*/
+    .single_blog {
+        float: left;
+        margin-bottom: 50px;
+        margin-right: 4%;
+        width: 46.0%;
+    }
+    .single_blog .col-md-4:nth-child(2n) .single_blog {
+        margin-right: 0;
+    }
+    .single_blog .brand ul li {
+        font-size: 15px;
+    }
+    .single_blog .brand ul li {
+        margin-right: 12px;
+    }
+    .single_blog li.gallery {
+        padding: 13px 16px !important;
+    }
+    .single_blog li.gallery a {
+        font-size: 18px !important;
+    }
+    /*------footer widget---------*/
+    .footer_widget_section .col-md-4 {
+        float: left;
+        margin-bottom: 50px;
+        width: 50%;
+    }
+    .footer_widget_section .newsletter_widget button {
+        float: left;
+    }
+    /*------video section-------*/
+    .video_content {
+        height: 370px;
+    }
+    /*================================================================
+                        01. End Home page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        02. Start Service page Responsive style
+     ==================================================================*/
+    /*-------banner section------------*/
+    .banner_section {
+        margin-top: 70px;
+    }
+    .banner_content p {
+        width: 40%;
+    }
+    /*------quick support section-------*/
+    .quick_support_section {
+        padding: 80px 0 50px;
+    }
+    .quick_support_section .single_support {
+        margin-bottom: 30px;
+        padding: 34px 30px;
+        width: 45.8%;
+    }
+    /*------specialize section---------*/
+    .specialize_section .tooltipbar.bar1 {
+        left: 210px;
+        top: 58px;
+    }
+    .specialize_section .tooltipbar.bar2 {
+        bottom: 148px;
+        left: 66px;
+    }
+    .specialize_section .tooltipbar.bar3 {
+        bottom: 180px;
+        right: 84px;
+    }
+    /*---------experts carousel----------*/
+    .experts_section .expert_hover {
+        padding: 100px 20px;
+    }
+    .experts_section .single_carousel:hover .social_contact {
+        padding: 45px 69px;
+    }
+    #experts_carousel .owl-nav {
+        top: 440px;
+        width: 115px;
+    }
+    /*--------pricing plan section----------*/
+    .price_plan_section .price_header {
+        padding: 30px;
+    }
+    .price_plan_section .price_divider {
+        margin: 17px auto 20px;
+    }
+    .price_plan_section .price_header p {
+        font-size: 15px;
+    }
+    .price_plan_section .price_body {
+        padding: 10px 15px;
+    }
+    .price_plan_section .price_body .price_content h6 {
+        font-size: 14px;
+    }
+    .price_plan_section .price_content {
+        padding: 18px 0;
+    }
+    .price_plan_section .price_footer {
+        padding: 30px 20px;
+    }
+    .price_plan_section .price_footer .get_start {
+        height: 45px;
+        padding: 14px;
+        width: 170px;
+        font-size: 13px;
+    }
+    .price_plan_section .premium::before {
+        font-size: 11px;
+        height: 25px;
+        left: -42px;
+        line-height: 25px;
+        top: 23px;
+        width: 160px;
+    }
+    .premium .price_header {
+        padding: 28px !important;
+    }
+    /*================================================================
+                        02. End Service page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        03. Start Service Details page Responsive style
+     ==================================================================*/
+    /*---------treatment info section----------*/
+    .treatment_info_section {
+        padding-top: 60px;
+    }
+    .treatment_info_section .info_content {
+        margin-bottom: 30px;
+    }
+    .treatment_info_section:hover .treatment_info_img::before {
+        transform: scale(0.88, 0.86);
+    }
+    .treatment_info_section:hover .treatment_info_img::after {
+        transform: scale(0.78, 0.74);
+    }
+    /*--------treatment details section----------*/
+    .treatment_details_section .treatment_details p {
+        margin-top: 0;
+    }
+    .treatment_details_section .brochure {
+        margin-bottom: 30px;
+    }
+    .treatment_details_section .spa_bed {
+        width: 100%;
+    }
+    .treatment_details_section:hover .treatment_details_img::before {
+        transform: scale(0.88, 0.89);
+    }
+    .treatment_details_section:hover .treatment_details_img::after {
+        transform: scale(0.8, 0.76);
+    }
+    /*----------related service section------------*/
+    .related_service_section {
+        padding-bottom: 60px;
+    }
+    .related_service_section .col-md-4 {
+        float: left;
+        margin-bottom: 30px;
+        width: 50%;
+    }
+    /*================================================================
+                        03. End Service Details page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        04. Start Booking page Responsive style
+     ==================================================================*/
+    /*--------history section----------*/
+    .history_section .history_img img {
+        width: 100%;
+    }
+    .history_section:hover .history_img::after {
+        transform: scale(0.80, 0.77);
+    }
+    .bookint_cta_section .cta_content p {
+        width: 52%;
+    }
+    /*================================================================
+                        04. End Booking page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        05. Start Product page Responsive style
+     ==================================================================*/
+    .product_gallery .product_hover ul {
+        padding: 5px 20px;
+    }
+    .filtering_area .search_product input.form-control {
+        width: 300px;
+    }
+    /*----------product gallery version-2------------*/
+    .with_sidebar .filtering_area .search_product input.form-control {
+        width: 240px;
+    }
+    .with_sidebar .single_product {
+        width: 29.2%;
+    }
+    .product_gallery.with_sidebar .list_view .single_product .product_img {
+        width: 37.2%;
+    }
+    .with_sidebar .list_view .single_product {
+        width: 100%;
+    }
+    .list_view .product_price {
+        padding: 20px 30px;
+    }
+    .with_sidebar aside .single_block {
+        float: left;
+        margin-bottom: 40px;
+        margin-left: 45px;
+        width: 44%;
+    }
+    .with_sidebar aside.sidebar {
+        margin-left: -45px;
+    }
+    aside .categorie .panel a {
+        font-size: 14px;
+        letter-spacing: 0.8px;
+    }
+    aside .categorie .panel a span {
+        margin-left: 0;
+    }
+    aside .categorie .panel .panel-body a {
+        line-height: 28px;
+    }
+    aside .categorie .panel .panel-body {
+        padding: 10px;
+    }
+    aside .single_block.tag li a {
+        letter-spacing: normal;
+        padding: 8px 36px;
+    }
+    /*================================================================
+                        05. End Product page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        06. Start blog page Responsive style
+     ==================================================================*/
+    .blog_post_wrapper .single_blog {
+        width: 46%;
+        margin-right: 0;
+    }
+    .instagram_gallery a.venobox {
+        width: 30.6%;
+    }
+    .single_blog li.gallery {
+        padding: 13px 12px !important;
+    }
+    .blog_search,
+    .latest_blog_area,
+    .post_categories,
+    .instagram_gallery {
+        float: left;
+        margin-left: 30px;
+        width: 45.7%;
+    }
+    aside.right_sidebar {
+        margin-left: -30px;
+        margin-top: 50px;
+    }
+    /*----------1col with sidebar-------*/
+    .col1_withSidebar .single_blog {
+        width: 100%;
+    }
+    .col1_withSidebar .single_blog .blog_content p {
+        width: 58%;
+    }
+    /*================================================================
+                        06. End blog page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        08. Start Contact page Responsive style
+     ==================================================================*/
+    .getin_section .get_in form input {
+        float: none;
+        margin-right: 0;
+        width: 100%;
+    }
+    /*================================================================
+                        08. End Contact page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        07. Start product details page Responsive style
+     ==================================================================*/
+    .product_details_wrapper .product_details_content .add_cart_area>li.qty {
+        display: block;
+        margin-bottom: 12px;
+    }
+    .product_details_wrapper .product_details_content .add_cart_area .qty input {
+        width: 64px;
+    }
+    .product_details_wrapper .product_details_content .add_cart_area>li:nth-child(2) a {
+        margin-left: 0;
+    }
+    /*================================================================
+                        07. End product details Responsive style
+     ==================================================================*/
+    .error_section .body_img {
+        bottom: -41px;
+        width: 38%;
+    }
+    /*-----about us page-----*/
+    .facts_section .single_fact {
+        padding: 21px 17px;
+    }
+    .facts_section .single_fact h1 {
+        font-size: 44px;
+        line-height: 48px;
+    }
+}
+
+
+/*----------end 768-991px media query----------*/
+
+
+/*------------only for menu---------------*/
+
+@media (max-width: 991px) {
+    #search_button,
+    .sticked #search_button {
+        margin: 10px auto 6px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    header {
+        padding: 10px 0;
+    }
+    .hero_area_v2.slider_wrapper {
+        margin-top: 0;
+    }
+    .beauty .menuzord .showhide em {
+        background: #d52759 none repeat scroll 0 0;
+        margin: 5.5px 20px 0;
+        width: 28px;
+    }
+    .beauty .menuzord .showhide {
+        padding: 9px 0 0;
+    }
+    .beauty .menuzord-brand {
+        margin: 0px 0px 0 0;
+        width: 180px;
+    }
+    .sticked .beauty .menuzord-brand {
+        margin: 0px 0px 0 0;
+    }
+    .beauty .menuzord-brand>img {
+        width: 100%;
+    }
+    .beauty .menuzord-menu>li a,
+    .sticked .beauty .menuzord-menu>li>a {
+        font-size: 13px;
+        padding: 10px 13px;
+    }
+    .beauty .menuzord-menu>li>.megamenu::before,
+    .beauty .menuzord-menu ul.triangle::before {
+        display: none;
+    }
+    .beauty .menuzord-menu>li>.megamenu {
+        border-top: medium none;
+        box-shadow: none;
+        padding: 13px 20px;
+    }
+    .beauty .menuzord-menu ul.dropdown li ul.dropdown.dropdown-left {
+        transform: translateX(0%);
+    }
+    .beauty .menuzord-menu ul.dropdown,
+    .beauty .menuzord-menu ul.dropdown li ul.dropdown {
+        border-top: none;
+        box-shadow: none;
+    }
+    .beauty .menuzord-menu .megamenu .col3>ul {
+        margin-bottom: 0;
+        float: left;
+        width: 49%;
+    }
+    .beauty .megamenu-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+    }
+    .beauty .megamenu .col3.clearfix {
+        margin: 0 !important;
+    }
+    .beauty .megamenu .col6 {
+        width: 48.5%;
+        display: none!important;
+    }
+    .beauty .menuzord-menu ul.dropdown li {
+        border-bottom: 0px solid #e9e9e9;
+    }
+    .beauty .menuzord-responsive .menuzord-menu li ul.dropdown li .indicator {
+        height: 51px;
+        line-height: 52px;
+    }
+    .beauty .menuzord-responsive .menuzord-menu li ul.dropdown li .indicator i {
+        transform: rotate(90deg);
+    }
+    .beauty .appoinment_btn {
+        display: none!important;
+    }
+    .beauty .menuzord-responsive .menuzord-menu ul.dropdown li a {
+        text-transform: capitalize;
+    }
+    .menuzord-responsive .menuzord-menu.menuzord-indented>li>ul.dropdown>li:hover>a {
+        padding-left: 40px !important;
+    }
+    .menuzord-responsive .menuzord-menu.menuzord-indented>li>ul.dropdown>li>ul.dropdown>li:hover>a {
+        padding-left: 60px !important;
+    }
+    .menuzord-responsive .menuzord-menu.menuzord-indented>li>ul.dropdown>li>ul.dropdown>li>ul.dropdown>li:hover>a {
+        padding-left: 80px !important;
+    }
+    /*------version 2 style--------*/
+    .hero_area_v2.slider_wrapper {
+        margin-top: 0;
+    }
+    .header_v2 .menuzord-responsive .menuzord-menu {
+        background: #fff none repeat scroll 0 0;
+    }
+    .header_v2 .beauty .menuzord-menu>li>a {
+        color: #5f5f5f;
+    }
+    .header_v2 .beauty .menuzord .showhide em {
+        background: #fff none repeat scroll 0 0;
+    }
+    .header_v2.sticked .beauty .menuzord .showhide em {
+        background: #d52759 none repeat scroll 0 0;
+    }
+    .header_404 .beauty .menuzord .showhide em {
+        background: #720f83 none repeat scroll 0 0;
+    }
+}
+
+
+/*----------end maximum 991px for menu media query----------*/
+
+@media (min-width: 480px) and (max-width: 767px) {
+    /*================================================================
+                        01. Start Home page Responsive style
+     ==================================================================*/
+    .quick_booking {
+        display: none;
+    }
+    #custom_modal .modal-dialog.modal-sm {
+        border-radius: 5px;
+        height: 190px;
+        padding: 30px 27px;
+        width: 350px;
+        position: relative;
+        left: 50%;
+        margin-left: -175px;
+        top: 0;
+    }
+    .quick_search {
+        display: none;
+    }
+    #custom_modal .close {
+        right: -12px;
+        top: -13px;
+    }
+    .container {
+        width: 450px;
+    }
+    #header .container {
+        width: 100%;
+    }
+    /*------header top--------*/
+    .beauty .megamenu-row {
+        display: block;
+    }
+    .beauty .menuzord-menu .megamenu .col3>ul {
+        margin-bottom: 20px;
+        width: 50%;
+    }
+    .opening_time,
+    .contact_mail {
+        float: none !important;
+        text-align: center;
+    }
+    /*-------hero area version-4-------*/
+    .hero_area_v4,
+    .hero_area_v4 .single_hero_content {
+        height: 320px;
+    }
+    .hero_area_v4 .single_hero_content h2 {
+        width: 70%;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .hero_area_v4 .single_hero_content p {
+        width: 100%;
+        font-size: 16px;
+        margin-top: 15px;
+        line-height: 21px;
+    }
+    .hero_area_v4 .mouse {
+        display: none;
+    }
+    .bgVideo .hero_content4_wrapper .single_hero_content h1 {
+        font-size: 40px;
+        line-height: 42px;
+        width: 100%;
+    }
+    /*---------slider section------*/
+    .hero_area.slider_wrapper {
+        margin-top: 68px;
+    }
+    .hero_area_v2.slider_wrapper {
+        margin-top: 0;
+    }
+    .slider_wrapper .Modern-Slider .item .img-fill {
+        height: 430px;
+    }
+    .slider_wrapper .caption_left {
+        align-items: center;
+    }
+    .Modern-Slider .PrevArrow,
+    .Modern-Slider .NextArrow {
+        display: none!important;
+    }
+    .slider_wrapper .Modern-Slider .item h3 {
+        font-size: 40px;
+        line-height: 43px;
+    }
+    .slider_wrapper .Modern-Slider .item h4 {
+        font-size: 23px;
+    }
+    .slider_wrapper .Modern-Slider .item h5 {
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+    }
+    .slider_wrapper .Modern-Slider .slider_button a {
+        height: 45px;
+        line-height: 30px;
+        padding: 9px 27px;
+    }
+    /*-------welcome section-------*/
+    .welcom_section,
+    .service_section,
+    .session_booking_section,
+    .beautyLab_gallery_section,
+    .product_carousel_section,
+    .priceing_section,
+    .testimonial_section,
+    .blog_section,
+    .footer_widget_section {
+        padding: 70px 0 50px;
+    }
+    .section_title h3 {
+        font-size: 25px;
+    }
+    .section_title>p {
+        width: 100%;
+    }
+    .welcome_carousel_wrapper {
+        display: none;
+    }
+    .welcom_section .single_feature {
+        float: none !important;
+        margin: 0 !important;
+        width: 100%;
+        padding-top: 0;
+    }
+    .welcom_section .single_feature::before,
+    .welcom_section .single_feature::after {
+        display: none;
+    }
+    .welcom_section_v2 .welcome_feature_wrapper {
+        margin-left: 0;
+    }
+    /*------booking section-------*/
+    .session_booking_section {
+        background-position: right bottom;
+    }
+    .session_booking_section .session_booking_wrapper .form-control {
+        width: 100%;
+        float: none!important;
+    }
+    #datetimepicker1 .form-control {
+        width: 112.1%;
+    }
+    .session_booking_section .session_booking_wrapper form button {
+        font-size: 14px;
+        height: 40px;
+        padding: 8px 21px;
+    }
+    /*------service section----------*/
+    .service_section .single_service .img img {
+        width: 100%;
+    }
+    .service_section .img_over_content {
+        padding: 46px 28px;
+    }
+    .service_section .img_over_content a {
+        margin: 10px 0;
+    }
+    /*----------gallery section--------*/
+    .feltering_menu li {
+        border-radius: 3px;
+        font-size: 15px;
+        font-weight: normal;
+        letter-spacing: normal;
+        margin-right: 13px;
+        padding: 6px 14px;
+        margin-bottom: 10px;
+        line-height: 20px;
+    }
+    .beautyLab_photo_gallery .gallery_wrapper .mix {
+        padding-right: 15px;
+    }
+    .beautyLab_photo_gallery .single_gallery,
+    .beautyLab_gallery_section .single_gallery {
+        margin: 0 auto 30px;
+        position: relative;
+        width: 418px !important;
+    }
+    .beautyLab_photo_gallery .single_gallery img.img,
+    .beautyLab_gallery_section .single_gallery img.img {
+        width: 100% !important;
+    }
+    .beautyLab_gallery_section .single_gallery .single_gallery_overlay {
+        padding: 65px;
+    }
+    .beautyLab_photo_gallery .feltering_menu {
+        text-align: center;
+    }
+    /*-----product carousel section------*/
+    .product_carousel_wrapper .single_carousel .product_hover {
+        padding: 20px;
+    }
+    .product_carousel_section {
+        padding-bottom: 70px;
+    }
+    .product_carousel_wrapper .owl-nav {
+        display: none!important;
+    }
+    /*-------priceing section--------*/
+    .price_list_tab .tab_menu li {
+        margin: 5px;
+    }
+    .priceing_section .price_list_tab .tab_menu li a {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 7px 20px;
+    }
+    .priceing_section .section_title {
+        padding-bottom: 40px;
+    }
+    .priceing_section .single_price_list {
+        float: none;
+        margin-left: 0 !important;
+        width: 100%;
+    }
+    .priceing_section a.booking-now,
+    .cta_content a {
+        padding: 7px 12px;
+        width: 200px;
+    }
+    /*---------testimonial section----------*/
+    .testimonial_section .single_testimonial {
+        width: 90%;
+    }
+    .testimonial_section .owl-prev {
+        left: -25px;
+    }
+    .testimonial_section .owl-next {
+        right: -25px;
+    }
+    /*-------blog section---------*/
+    .single_blog {
+        float: none;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .single_blog .img {
+        width: 100%;
+    }
+    .single_blog .brand ul li {
+        font-size: 15px;
+    }
+    .single_blog .brand ul li {
+        margin-right: 12px;
+    }
+    .single_blog li.gallery {
+        padding: 13px 16px !important;
+    }
+    .single_blog li.gallery a {
+        font-size: 18px !important;
+    }
+    /*-----cta section-------*/
+    .cta_section .cta_content {
+        display: block;
+        text-align: center;
+    }
+    .cta_content a {
+        margin: 20px auto 0;
+        padding: 7px 12px;
+        width: 200px;
+    }
+    /*------footer widget---------*/
+    .single_widget {
+        margin-bottom: 50px;
+    }
+    .footer_widget_section .newsletter_widget button {
+        float: none;
+    }
+    /*================================================================
+                        01. End Home page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        02. Start Service page Responsive style
+     ==================================================================*/
+    /*-------banner section------------*/
+    .banner_section {
+        background-position: center center;
+        background-attachment: scroll;
+        margin-top: 70px;
+    }
+    .banner_content p {
+        width: 60%;
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .banner_content {
+        height: 250px;
+    }
+    .banner_section .breadcrumb li {
+        font-size: 13px;
+    }
+    /*------quick support section-------*/
+    .quick_support_section {
+        padding: 80px 0 50px;
+    }
+    .quick_support_section .single_support {
+        margin-bottom: 30px;
+        margin-right: 0;
+        padding: 30px 30px;
+        text-align: center;
+        width: 100%;
+    }
+    .quick_support_section .single_support .content {
+        text-align: left;
+    }
+    .quick_support_section .social_link .content {
+        text-align: center !important;
+    }
+    /*------specialize section---------*/
+    .specialize_section {
+        padding: 60px 0 30px;
+    }
+    .specialize_section .tooltipbar.bar1 {
+        left: 142px;
+        top: 38px;
+    }
+    .specialize_section .tooltipbar.bar2 {
+        bottom: 104px;
+        left: 50px;
+    }
+    .specialize_section .tooltipbar.bar3 {
+        bottom: 123px;
+        right: 54px;
+    }
+    /*---------experts carousel----------*/
+    .experts_section .expert_hover {
+        padding: 100px 20px;
+    }
+    .experts_section .single_carousel:hover .social_contact {
+        padding: 45px 69px;
+    }
+    #experts_carousel .owl-nav {
+        top: 440px;
+        width: 115px;
+    }
+    /*--------pricing plan section----------*/
+    .price_plan_section .single_price_plan {
+        float: none !important;
+        margin: 0 auto 40px;
+        width: 80%;
+    }
+    .price_plan_section .price_header {
+        padding: 30px;
+    }
+    .price_plan_section .price_divider {
+        margin: 17px auto 20px;
+    }
+    .price_plan_section .price_header p {
+        font-size: 15px;
+    }
+    .price_plan_section .price_body {
+        padding: 10px 35px;
+    }
+    .price_plan_section .price_body .price_content h6 {
+        font-size: 14px;
+    }
+    .price_plan_section .price_content {
+        padding: 25px 0;
+    }
+    .price_plan_section .price_footer {
+        padding: 30px 20px;
+    }
+    .price_plan_section .price_footer .get_start {
+        height: 45px;
+        padding: 14px;
+        width: 170px;
+        font-size: 13px;
+    }
+    .price_plan_section .premium::before {
+        font-size: 11px;
+        height: 25px;
+        left: -42px;
+        line-height: 25px;
+        top: 23px;
+        width: 160px;
+    }
+    .premium .price_header {
+        padding: 28px !important;
+    }
+    .price_plan_section .single_price_plan:last-child {
+        margin-bottom: 0;
+    }
+    /*================================================================
+                        02. End Service page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        03. Start Service Details page Responsive style
+     ==================================================================*/
+    /*---------treatment info section----------*/
+    .treatment_info_section {
+        padding-top: 60px;
+    }
+    .treatment_info_section .info_content {
+        margin-bottom: 30px;
+    }
+    .treatment_info_section .single_support {
+        width: 50%;
+        margin-right: 0;
+    }
+    .treatment_info_section .single_support i {
+        font-size: 36px;
+    }
+    .treatment_info_section .single_support .content {
+        padding-left: 7px;
+    }
+    .treatment_info_section:hover .treatment_info_img::before {
+        transform: scale(0.88, 0.87);
+    }
+    .treatment_info_section:hover .treatment_info_img::after {
+        transform: scale(0.78, 0.75);
+    }
+    /*--------treatment details section----------*/
+    .treatment_details_section .treatment_details p {
+        margin-top: 0;
+    }
+    .treatment_details_section .brochure {
+        margin-bottom: 30px;
+    }
+    .treatment_details_section .spa_bed {
+        width: 100%;
+    }
+    .treatment_details_section:hover .treatment_details_img::before {
+        transform: scale(0.88, 0.88);
+    }
+    .treatment_details_section:hover .treatment_details_img::after {
+        transform: scale(0.8, 0.76);
+    }
+    /*----------related service section------------*/
+    .related_service_section {
+        padding-bottom: 60px;
+    }
+    .related_service_section .col-md-4 {
+        float: none;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .related_service_section .single_service img {
+        width: 100%;
+    }
+    .related_service_section .link_hover {
+        font-size: 22px;
+    }
+    /*================================================================
+                        03. End Service Details page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        04. Start Booking page Responsive style
+     ==================================================================*/
+    /*--------history section----------*/
+    .history_section .history_img img {
+        width: 100%;
+    }
+    .cta_section .mail_form {
+        margin-top: 30px;
+        border: medium none;
+    }
+    .cta_section .mail_form form input {
+        border: 1px solid #d5275a;
+        float: left;
+        width: 80%;
+    }
+    .cta_section .mail_form .btn.btn-default {
+        margin-left: -11px;
+    }
+    /*================================================================
+                        04. End Booking page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        05. Start Product page Responsive style
+     ==================================================================*/
+    .filtering_area {
+        align-items: flex-start;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+    .filtering_area .product_gallery .product_hover ul {
+        padding: 5px 50px;
+    }
+    .filtering_area .search_product {
+        margin: 0;
+        width: 100%;
+    }
+    .with_sidebar .filtering_area .search_product input.form-control,
+    .filtering_area .search_product input.form-control {
+        width: 210px;
+    }
+    .filtering_area .search_product .form-group {
+        margin-bottom: 0;
+    }
+    .filtering_area .favouritCart {
+        left: 15px;
+        position: absolute;
+        top: -57px;
+    }
+    .filtering_area .search_product,
+    .filtering_area .favouritCart {
+        margin-bottom: 10px;
+    }
+    .product_gallery .single_product {
+        margin: 0 auto 40px;
+        width: 100%;
+    }
+    .product_gallery .single_product .product_img img.img {
+        width: 100%;
+    }
+    .custom_pagination nav {
+        text-align: center;
+    }
+    #product_gallery_v2 {
+        margin-left: 0;
+    }
+    .with_sidebar .filtering_area .view_formate {
+        display: none;
+    }
+    .with_sidebar aside .single_block.tag li a {
+        padding: 8px 17px;
+    }
+    /*================================================================
+                        05. End Product page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        06. Start blog page Responsive style
+     ==================================================================*/
+    .blog_post_wrapper .single_blog {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .blog_post_wrapper.clearfix {
+        margin-left: 0;
+    }
+    .instagram_gallery a.venobox {
+        width: 30.6%;
+    }
+    .single_blog li.gallery {
+        padding: 13px 20px !important;
+    }
+    .blog_search,
+    .latest_blog_area,
+    .post_categories,
+    .instagram_gallery {
+        float: none;
+        margin-left: 0;
+        width: 100%;
+    }
+    aside.right_sidebar {
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    /*-----------1col with sidebar---------*/
+    .col1_withSidebar .single_blog .blog_content p {
+        width: 100%;
+    }
+    /*================================================================
+                        06. End blog page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        07. Start blog details page Responsive style
+     ==================================================================*/
+    .blog_details_wrapper h5.title {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .blog_details_wrapper .tags li a {
+        font-size: 14px;
+    }
+    .blog_details_wrapper .admin_details {
+        padding: 20px;
+    }
+    .blog_details_wrapper .admin_description {
+        width: calc(100% - 95px);
+    }
+    .comment_section ul li img {
+        display: inline-block;
+        height: 55px;
+        width: 65px;
+    }
+    .comment_section ul li ul {
+        padding-left: 39px;
+    }
+    .comment_form_section form input {
+        float: none;
+        margin-right: 0;
+        width: 100%;
+    }
+    /*================================================================
+                        07. End blog details page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        08. Start Contact page Responsive style
+     ==================================================================*/
+    .getin_section .get_in form input {
+        float: none;
+        margin-right: 0;
+        width: 100%;
+    }
+    .consultant_wrapper {
+        margin-top: 60px;
+    }
+    /*================================================================
+                        08. End Contact page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        07. Start product details page Responsive style
+     ==================================================================*/
+    .product_details_wrapper {
+        display: block;
+    }
+    .product_details_wrapper .product_preview_area,
+    .product_details_wrapper .product_details_content {
+        width: 100%;
+    }
+    .product_details_wrapper .product_details_content {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    /*================================================================
+                        07. End product details Responsive style
+     ==================================================================*/
+    /*================================================================
+                        08. Start 404 page Responsive style
+     ==================================================================*/
+    .error_section .body_img {
+        display: none;
+    }
+    .error_section .error_content {
+        height: 100vh;
+        min-height: 430px;
+    }
+    .error_section .error_txt h1 {
+        font-size: 100px;
+        line-height: 75px;
+    }
+    .error_section .error_txt h1::before {
+        font-size: 15px;
+        left: 141px;
+        letter-spacing: 5px;
+        line-height: 16px;
+        padding: 6px 9.6px;
+        top: 18px;
+    }
+    .error_section .error_txt h1::after {
+        border-bottom: 23px solid #f4f5f6;
+        border-left: 16px solid transparent;
+        left: 126px;
+        top: 23px;
+    }
+    .error_section .error_txt h5 {
+        letter-spacing: 3.3px;
+        margin-left: 0;
+        margin-top: -6px;
+    }
+    .error_section .error_txt p {
+        margin: 10px auto;
+        width: 90%;
+    }
+    .error_section .error_txt .backto {
+        font-weight: 500;
+        padding: 9px 20px;
+    }
+    /*================================================================
+                        08. End 404 page Responsive style
+     ==================================================================*/
+    /*-----about us page-----*/
+    .facts_section {
+        padding: 33px 0;
+    }
+    .facts_section .single_fact {
+        padding: 21px 7px;
+        text-align: center;
+    }
+    .facts_section .single_fact h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .facts_section .single_fact>p {
+        font-size: 14px;
+    }
+    .feature_section {
+        padding: 50px 0 60px;
+    }
+}
+
+
+/*----------end 480-767px media query----------*/
+
+@media (min-width: 300px) and (max-width: 479px) {
+    /*================================================================
+                        01. Start Home page Responsive style
+     ==================================================================*/
+    .quick_booking {
+        display: none;
+    }
+    #custom_modal .modal-dialog.modal-sm {
+        border-radius: 5px;
+        height: auto;
+        left: 50%;
+        margin-left: -136px;
+        padding: 20px 27px;
+        position: relative;
+        top: 0;
+        width: 260px;
+    }
+    #custom_modal .form-inline input {
+        border-radius: 5px;
+        height: 40px;
+        margin-top: 10px;
+        padding: 0 11px;
+        width: 100%;
+    }
+    #custom_modal .form-inline>button {
+        border-radius: 5px;
+        display: block;
+        height: 40px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 0 15px;
+    }
+    .quick_search {
+        display: none;
+    }
+    #custom_modal .close {
+        right: -12px;
+        top: -13px;
+    }
+    /*------header top--------*/
+    .header_top .color_dd {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .beauty .megamenu-row {
+        display: block;
+    }
+    .beauty .menuzord-menu .megamenu .col3>ul {
+        margin-bottom: 20px;
+        width: 50%;
+    }
+    .opening_time,
+    .contact_mail {
+        float: none !important;
+        text-align: center;
+    }
+    .beauty .menuzord .showhide {
+        height: 35px;
+    }
+    .beauty .menuzord-brand {
+        width: 130px;
+    }
+    .beauty .menuzord .showhide {
+        padding: 3px 0 0;
+    }
+    .beauty .menuzord .showhide em {
+        height: 2px;
+        width: 23px;
+    }
+    /*-------hero area version-4-------*/
+    .hero_area_v4,
+    .hero_area_v4 .single_hero_content {
+        height: 320px;
+    }
+    .hero_area_v4 .single_hero_content h2 {
+        font-size: 20px;
+        line-height: 25px;
+        width: 70%;
+    }
+    .hero_area_v4 .single_hero_content p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 12px;
+        width: 100%;
+    }
+    .hero_area_v4 .mouse {
+        display: none;
+    }
+    .bgVideo .hero_content4_wrapper .single_hero_content h1 {
+        font-size: 24px;
+        line-height: 30px;
+        width: 100%;
+    }
+    /*---------slider section------*/
+    .slider_wrapper .col-md-12.clearfix.pl_40.pr_40 {
+        padding: 0 15px !important;
+    }
+    .hero_area.slider_wrapper {
+        margin-top: 54px;
+    }
+    .hero_area_v2.slider_wrapper {
+        margin-top: 0;
+    }
+    .slider_wrapper .Modern-Slider .item .img-fill {
+        height: 340px;
+    }
+    .slider_wrapper .caption_left {
+        align-items: center;
+    }
+    .Modern-Slider .PrevArrow,
+    .Modern-Slider .NextArrow {
+        display: none!important;
+    }
+    .slider_wrapper .Modern-Slider .item h3 {
+        font-size: 24px;
+        line-height: 20px;
+    }
+    .slider_wrapper .Modern-Slider .item h4 {
+        font-size: 17px;
+    }
+    .slider_wrapper .Modern-Slider .item h5 {
+        font-size: 15px;
+        line-height: 21px;
+        text-align: center;
+        width: 100%;
+    }
+    .slider_wrapper .Modern-Slider .slider_button a {
+        font-size: 12px;
+        height: 40px;
+        line-height: 30px;
+        padding: 6px 17px;
+    }
+    /*-------welcome section-------*/
+    .welcom_section,
+    .service_section,
+    .session_booking_section,
+    .beautyLab_gallery_section,
+    .product_carousel_section,
+    .priceing_section,
+    .testimonial_section,
+    .blog_section,
+    .footer_widget_section {
+        padding: 50px 0 50px;
+    }
+    .section_title h3 {
+        font-size: 25px;
+    }
+    .section_title>p {
+        width: 100%;
+    }
+    .welcome_carousel_wrapper {
+        display: none;
+    }
+    .welcom_section .single_feature {
+        float: none !important;
+        margin: 0 !important;
+        width: 100%;
+        padding-top: 0;
+    }
+    .welcome_feature_wrapper .feature_content {
+        padding: 0 0 0 20px;
+    }
+    .welcom_section .single_feature::before,
+    .welcom_section .single_feature::after {
+        display: none;
+    }
+    .welcom_section_v2 .welcome_feature_wrapper {
+        margin-left: 0;
+    }
+    /*------booking section-------*/
+    .session_booking_section {
+        background-position: right bottom;
+    }
+    .session_booking_section .session_booking_wrapper .form-control {
+        width: 100%;
+        float: none!important;
+    }
+    #datetimepicker1 .form-control {
+        width: 123.2%;
+    }
+    .session_booking_section .session_booking_wrapper form button {
+        font-size: 14px;
+        height: 40px;
+        padding: 8px 21px;
+    }
+    /*------service section----------*/
+    .service_section .single_service .img img {
+        width: 100%;
+    }
+    .service_section .img_over_content {
+        padding: 8px 10px;
+    }
+    .service_section .img_over_content i {
+        font-size: 40px;
+    }
+    .service_section .img_over_content a {
+        margin: 10px 0;
+    }
+    /*----------gallery section--------*/
+    .feltering_menu li {
+        border-radius: 3px;
+        font-size: 15px;
+        font-weight: normal;
+        letter-spacing: normal;
+        margin-right: 13px;
+        padding: 6px 14px;
+        margin-bottom: 10px;
+        line-height: 20px;
+    }
+    .beautyLab_gallery_section .single_gallery {
+        margin: 0 auto 30px;
+        position: relative;
+    }
+    .beautyLab_gallery_section .single_gallery img.img {
+        width: 100% !important;
+    }
+    .beautyLab_gallery_section .single_gallery .single_gallery_overlay {
+        padding: 15px;
+    }
+    .beautyLab_photo_gallery .gallery_wrapper .mix {
+        padding-right: 15px;
+    }
+    /*-----product carousel section------*/
+    .product_carousel_wrapper .single_carousel .product_hover {
+        padding: 20px;
+    }
+    .product_carousel_section {
+        padding-bottom: 70px;
+    }
+    .product_carousel_wrapper .owl-nav {
+        display: none!important;
+    }
+    /*-------priceing section--------*/
+    .price_list_tab .tab_menu li {
+        margin: 5px;
+    }
+    .priceing_section .price_list_tab .tab_menu li a {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 7px 17px;
+    }
+    .priceing_section .section_title {
+        padding-bottom: 40px;
+    }
+    .priceing_section .single_price_list {
+        float: none;
+        margin-left: 0 !important;
+        width: 100%;
+    }
+    .priceing_section a.booking-now,
+    .cta_content a {
+        padding: 7px 12px;
+        width: 200px;
+    }
+    /*---------testimonial section----------*/
+    .testimonial_section .single_testimonial {
+        width: 100%;
+    }
+    .testimonial_section .section_title.pb_60 {
+        padding-bottom: 20px;
+    }
+    .testimonial_section .owl-prev,
+    .testimonial_section .owl-next {
+        display: none;
+    }
+    .testimonial_section .author a {
+        margin-top: 15px;
+    }
+    /*-------blog section---------*/
+    .single_blog {
+        float: none;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .single_blog .img {
+        width: 100%;
+    }
+    .single_blog .brand ul li {
+        font-size: 15px;
+    }
+    .single_blog .brand ul li {
+        margin-right: 12px;
+    }
+    .single_blog li.gallery {
+        padding: 13px 11px !important;
+    }
+    .single_blog li.gallery a {
+        font-size: 18px !important;
+    }
+    /*-----cta section-------*/
+    .cta_section .cta_content {
+        display: block;
+        text-align: center;
+    }
+    .cta_content a {
+        margin: 20px auto 0;
+        padding: 7px 12px;
+        width: 200px;
+    }
+    /*------footer widget---------*/
+    .single_widget {
+        margin-bottom: 50px;
+    }
+    .footer_widget_section .newsletter_widget button {
+        float: none;
+    }
+    /*------video section-------*/
+    .video_content {
+        height: 330px;
+    }
+    /*------video section-------*/
+    .video_content {
+        height: 250px;
+    }
+    .video_content i {
+        font-size: 15px;
+        height: 40px;
+        margin-bottom: 15px;
+        padding: 12px 13px 13px 15px;
+        width: 40px;
+    }
+    .video_section .video_content h3 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    /*================================================================
+                        01. End Home page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        02. Start Service page Responsive style
+     ==================================================================*/
+    /*-------banner section------------*/
+    .banner_section {
+        background-position: center center;
+        background-attachment: scroll;
+        margin-top: 52px;
+    }
+    .banner_content p {
+        width: 90%;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .banner_content {
+        height: 250px;
+    }
+    .banner_section .breadcrumb li {
+        font-size: 13px;
+    }
+    /*------quick support section-------*/
+    .quick_support_section {
+        padding: 80px 0 50px;
+    }
+    .quick_support_section .single_support {
+        margin-bottom: 30px;
+        margin-right: 0;
+        padding: 30px 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .quick_support_section .single_support .content {
+        text-align: left;
+    }
+    .quick_support_section .social_link .content {
+        text-align: center !important;
+    }
+    /*------specialize section---------*/
+    .specialize_section {
+        padding: 60px 0 30px;
+    }
+    .specialize_section .tooltipbar.bar1 {
+        left: 33%;
+        top: 13%;
+    }
+    .specialize_section .tooltipbar.bar2 {
+        bottom: 35%;
+        left: 11%;
+    }
+    .specialize_section .tooltipbar.bar3 {
+        bottom: 40%;
+        right: 10%;
+    }
+    /*---------experts carousel----------*/
+    .experts_section .expert_hover {
+        padding: 30px 20px;
+    }
+    .experts_section .single_carousel:hover .social_contact {
+        padding: 16px 28px;
+    }
+    #experts_carousel .owl-nav {
+        top: 440px;
+        width: 115px;
+    }
+    /*--------pricing plan section----------*/
+    .price_plan_section .single_price_plan {
+        float: none !important;
+        margin: 0 auto 40px;
+        width: 100%;
+    }
+    .price_plan_section .price_header {
+        padding: 30px;
+    }
+    .price_plan_section .price_divider {
+        margin: 17px auto 20px;
+    }
+    .price_plan_section .price_header p {
+        font-size: 15px;
+    }
+    .price_plan_section .price_body {
+        padding: 10px 35px;
+    }
+    .price_plan_section .price_body .price_content h6 {
+        font-size: 14px;
+    }
+    .price_plan_section .price_content {
+        padding: 25px 0;
+    }
+    .price_plan_section .price_footer {
+        padding: 30px 20px;
+    }
+    .price_plan_section .price_footer .get_start {
+        height: 45px;
+        padding: 14px;
+        width: 170px;
+        font-size: 13px;
+    }
+    .price_plan_section .premium::before {
+        font-size: 11px;
+        height: 25px;
+        left: -42px;
+        line-height: 25px;
+        top: 23px;
+        width: 160px;
+    }
+    .premium .price_header {
+        padding: 28px !important;
+    }
+    .price_plan_section .single_price_plan:last-child {
+        margin-bottom: 0;
+    }
+    /*================================================================
+                        02. End Service page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        03. Start Service Details page Responsive style
+     ==================================================================*/
+    /*---------treatment info section----------*/
+    .treatment_info_section {
+        padding-top: 60px;
+    }
+    .treatment_info_section .single_support {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .treatment_info_section:hover .treatment_info_img::before {
+        transform: scale(0.88, 0.87);
+    }
+    .treatment_info_section:hover .treatment_info_img::after {
+        transform: scale(0.78, 0.75);
+    }
+    /*--------treatment details section----------*/
+    .treatment_details_section .treatment_details p {
+        margin-top: 0;
+    }
+    .treatment_details_section .brochure {
+        margin-bottom: 30px;
+    }
+    .treatment_details_section .spa_bed {
+        width: 100%;
+    }
+    .treatment_details_section:hover .treatment_details_img::before {
+        transform: scale(0.88, 0.87);
+    }
+    .treatment_details_section:hover .treatment_details_img::after {
+        transform: scale(0.76, 0.70);
+    }
+    /*----------related service section------------*/
+    .related_service_section {
+        padding-bottom: 60px;
+    }
+    .related_service_section .col-md-4 {
+        float: none;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .related_service_section .single_service img {
+        width: 100%;
+    }
+    .related_service_section .link_hover {
+        font-size: 22px;
+    }
+    /*================================================================
+                        03. End Service Details page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        04. Start Booking page Responsive style
+     ==================================================================*/
+    /*--------history section----------*/
+    .history_details h4 {
+        font-size: 22px;
+    }
+    .history_details span.roboto {
+        font-size: 16px;
+        letter-spacing: normal;
+        margin-top: 0;
+    }
+    .history_section .history_img img {
+        width: 100%;
+    }
+    .cta_section .mail_form {
+        margin-top: 30px;
+        border: medium none;
+    }
+    .cta_section .mail_form form input {
+        border: 1px solid #d5275a;
+        float: left;
+        width: 73%;
+    }
+    .cta_section .mail_form .btn.btn-default {
+        margin-left: -11px;
+    }
+    /*================================================================
+                        04. End Booking page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        05. Start Product page Responsive style
+     ==================================================================*/
+    .filtering_area {
+        align-items: flex-start;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+    .filtering_area .product_gallery .product_hover ul {
+        padding: 5px 50px;
+    }
+    .filtering_area .search_product {
+        border: medium none;
+        margin: 0 !important;
+        width: 100%;
+    }
+    .with_sidebar .filtering_area .search_product input.form-control,
+    .filtering_area .search_product input.form-control {
+        width: 210px;
+    }
+    .filtering_area .search_product .form-group {
+        margin-bottom: 0;
+    }
+    .filtering_area .favouritCart {
+        left: 15px;
+        position: absolute;
+        top: -54px;
+    }
+    .filtering_area .search_product,
+    .filtering_area .favouritCart {
+        margin-bottom: 10px;
+    }
+    .filtering_area .nice-select.wide {
+        border: 1px solid #dedbdb;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .filtering_area input.form-control,
+    .filtering_area .search_product button {
+        border: 1px solid #dedbdb !important;
+        border-radius: 0;
+        float: left;
+    }
+    .filtering_area .search_product input.form-control,
+    .filtering_area .nice-select.wide {
+        width: 84%;
+    }
+    .filtering_area .search_product .btn-default {
+        margin-left: -1px;
+    }
+    .with_sidebar .single_product,
+    .product_gallery .single_product {
+        margin: 0 auto 40px;
+        width: 270px;
+        float: none;
+    }
+    .custom_pagination nav {
+        text-align: center;
+    }
+    .custom_pagination .pagination>li>a,
+    .custom_pagination .pagination>li>span {
+        font-size: 14px;
+        padding: 6px 13px;
+    }
+    .custom_pagination .pagination li span i {
+        font-size: 17px;
+    }
+    .product_gallery .single_product .product_img img.img {
+        width: 100%;
+    }
+    #product_gallery_v2 {
+        margin-left: 0;
+    }
+    .with_sidebar .filtering_area .view_formate {
+        display: none;
+    }
+    .with_sidebar aside .single_block.tag li a {
+        padding: 8px 17px;
+    }
+    .with_sidebar aside .single_block:last-child {
+        margin-bottom: 0;
+    }
+    /*================================================================
+                        05. End Product page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        06. Start blog page Responsive style
+     ==================================================================*/
+    .blog_post_wrapper .single_blog {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .single_blog .date h5 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .single_blog .date {
+        padding: 7px 12px;
+    }
+    .blog_post_wrapper.clearfix {
+        margin-left: 0;
+    }
+    .instagram_gallery a.venobox {
+        width: 30.4%;
+    }
+    .blog_search,
+    .latest_blog_area,
+    .post_categories,
+    .instagram_gallery {
+        float: none;
+        margin-left: 0;
+        width: 100%;
+    }
+    aside.right_sidebar {
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    .single_latest_post {
+        padding: 7px;
+    }
+    /*--------1col with sidebar------*/
+    .col1_withSidebar .single_blog .blog_content p {
+        width: 100%;
+    }
+    /*================================================================
+                        06. End blog page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        07. Start blog details page Responsive style
+     ==================================================================*/
+    .blog_details_wrapper h5.title {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    .blog_details_wrapper .tags li a {
+        font-size: 13px;
+    }
+    .blog_details_wrapper .admin_details {
+        padding: 20px;
+    }
+    .blog_details_wrapper .admin_details>img {
+        display: block;
+    }
+    .blog_details_wrapper .admin_description {
+        width: 100%;
+        display: block;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+    .comment_section ul li img {
+        display: inline-block;
+        height: 50px;
+        width: 55px;
+    }
+    .comment_section ul li ul {
+        padding-left: 39px;
+    }
+    .comment_section ul li .comment div {
+        padding-left: 10px;
+        width: calc(100% - 60px);
+    }
+    .comment_section ul li h6 a {
+        font-size: 15px;
+    }
+    .comment_section ul li span {
+        margin: 0 15px;
+        font-size: 12px;
+    }
+    .comment_form_section form input {
+        float: none;
+        margin-right: 0;
+        width: 100%;
+    }
+    .comment_form_section form input,
+    .comment_form_section form textarea {
+        margin-bottom: 6%;
+    }
+    /*================================================================
+                        07. End blog details page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        08. Start Contact page Responsive style
+     ==================================================================*/
+    .contact_info_section {
+        padding: 50px 0;
+    }
+    .contact_info_section .contact_number {
+        padding: 10px 20px;
+    }
+    .getin_section {
+        padding: 40px 0;
+    }
+    .getin_section .get_in form input {
+        float: none;
+        margin-right: 0;
+        width: 100%;
+    }
+    .consultant_wrapper {
+        margin-top: 60px;
+    }
+    /*================================================================
+                        08. End Contact page Responsive style
+     ==================================================================*/
+    /*================================================================
+                        07. Start product details page Responsive style
+     ==================================================================*/
+    .product_details_wrapper {
+        display: block;
+    }
+    .product_details_wrapper .product_preview_area,
+    .product_details_wrapper .product_details_content {
+        width: 100%;
+    }
+    .product_details_wrapper .product_details_content {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .product_details_wrapper .product_details_content .add_cart_area>li.qty {
+        display: block;
+        margin-bottom: 12px;
+    }
+    .product_details_wrapper .product_details_content .add_cart_area .qty input {
+        width: 64px;
+    }
+    .product_details_wrapper .product_details_content .add_cart_area>li:nth-child(2) a {
+        margin-left: 0;
+    }
+    .product_details_wrapper .product_details_content .share_icons li:first-child {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .product_review_tab .tab-content .tab-pane {
+        border: 1px solid #ddd;
+        padding: 15px 18px;
+    }
+    /*================================================================
+                        07. End product details Responsive style
+     ==================================================================*/
+    /*================================================================
+                        08. Start 404 page Responsive style
+     ==================================================================*/
+    .error_section .body_img {
+        display: none;
+    }
+    .error_section .error_content {
+        height: 100vh;
+        min-height: 430px;
+    }
+    .error_section .error_txt h1 {
+        font-size: 66px;
+        line-height: 53px;
+    }
+    .error_section .error_txt h1::before {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        font-size: 15px;
+        left: 50%;
+        letter-spacing: 2px;
+        line-height: 16px;
+        padding: initial;
+        top: -20px;
+        transform: translateX(-46%);
+    }
+    .error_section .error_txt h1::after {
+        display: none;
+    }
+    .error_section .error_txt h5 {
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-left: 0;
+        margin-top: -3px;
+    }
+    .error_section .error_txt p {
+        width: 100%;
+    }
+    .error_section .error_txt .backto {
+        font-size: 13px;
+        font-weight: 500;
+        padding: 9px 16px;
+    }
+    /*================================================================
+                        08. End 404 page Responsive style
+     ==================================================================*/
+    /*-----about us page-----*/
+    .facts_section {
+        padding: 33px 0;
+    }
+    .facts_section .facts_wrapper {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .facts_section .single_fact {
+        padding: 21px 15px;
+        text-align: center;
+    }
+    .facts_section .single_fact h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .facts_section .single_fact>p {
+        font-size: 14px;
+    }
+    .feature_section {
+        padding: 50px 0 60px;
+    }
+    .feature_section .single_feature {
+        padding-left: 55px;
+    }
+    .feature_section .single_feature i {
+        font-size: 31px;
+        top: 2px;
+    }
+}
+
+
+/*----------end 300-479px media query----------*/
