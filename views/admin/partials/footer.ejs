@@ -100,10 +100,9 @@
                 msg = 'Dịch vụ "'+ input.attr("serviceName") +'" Hoạt động';
                 boolean = true;
             }
-            $.get("./service-enable/" + id + "/" + boolean, function(data) {
+            $.get("./service-enable/" + id + "/" + boolean, (data) => {
                 console.log(data);
-            });
-            toastr.success(msg);
+            }).then(() => toastr.success(msg));
         });
 
         $(document).on("click","#service-delete", function(){

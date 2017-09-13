@@ -26,7 +26,7 @@
                     <!--<td>12120.00$ </td>-->
                     <td>
                         <input id="enableToggle" type="checkbox"
-                            <% if(services[i].isEnabled == true) {%>
+                            <% if(typeof services[i].isEnabled !== 'undefined' && services[i].isEnabled != false) {%>
                                     checked = ''
                             <% } %>
                                data-toggle="switch" serviceName="<%= services[i].name %>" serviceId="<%= services[i]._id %>" />
