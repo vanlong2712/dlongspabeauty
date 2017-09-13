@@ -90,6 +90,10 @@
     $(document).ready(function(){
         $("div.switch").on("click", function(){
             var input = $(this).find("input");
+            var nameToggle = input.attr("name");
+            if(nameToggle !== 'ToggleInList') {
+              return false;
+            }
             var msg = '';
             id = input.attr("serviceId");
             var boolean = '';
