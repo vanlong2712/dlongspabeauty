@@ -1,7 +1,7 @@
 <%- include partials/header %>
 
-    <!-- ======================================= 
-        ==Start banner section== 
+    <!-- =======================================
+        ==Start banner section==
     =======================================-->
     <section class="banner_section service_banner">
         <div class="overlay"></div>
@@ -9,23 +9,23 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="banner_content">
-                        <h4 class="fw_500 color_ff">Beauty Treatment</h4>
-                        <p class="color_ff">Welcome to beauty lab, where you can relax and enjoy life.</p>
+                        <h4 class="fw_500 color_ff"><%= service.name %></h4>
+                        <p class="color_ff"><%= service.title %></p>
                     </div>
                     <ol class="breadcrumb">
                         <li><a href="#">Service</a></li>
-                        <li class="active">Beauty Treatment</li>
+                        <li class="active"><%= service.name %></li>
                     </ol>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ======================================= 
-        ==End banner section==  
+    <!-- =======================================
+        ==End banner section==
     =======================================-->
 
-    <!-- ======================================= 
-        ==Start Treatment information section== 
+    <!-- =======================================
+        ==Start Treatment information section==
     =======================================-->
     <section class="treatment_info_section pt_90 pb_50">
         <div class="container">
@@ -34,12 +34,11 @@
                     <div class="info_content">
                         <h5 class="section_title color_72 fw_700 pos_relative pb_30">Treatment Informations</h5>
                         <ul>
-                            <li><span class="fw_700">Time:</span> Tue / 14:00-18:00 , Fri / 9:00-15:00</li>
-                            <li><span class="fw_700">Staff:</span> Dania Landy</li>
-                            <li><span class="fw_700">Price:</span> $70</li>
-                            <li><span class="fw_700">Duration:</span> <span class="color_d5">1.3 Hour</span></li>
+                            <li><span class="fw_700">Time:</span> <%= service.time %></li>
+                            <li><span class="fw_700">Price:</span> <%= service.price %></li>
+                            <li><span class="fw_700">Duration:</span> <span class="color_d5"><%= service.duration %></span></li>
                         </ul>
-                        <p class="info_details pt_15 pb_30">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid. The former case isn’t worth discussing here, but the latter requires a closer look.</p>
+                        <p class="info_details pt_15 pb_30"><%= service.description %></p>
                         <div class="quick_support_wrapper clearfix">
                             <div class="single_support pull-left">
                                 <i class="fa fa-comments-o"></i>
@@ -65,18 +64,18 @@
 
                 <div class="col-lg-5 col-lg-offset-1 col-md-5">
                     <div class="treatment_info_img pos_relative">
-                        <img src="images/spa_treatments.jpg" alt="spa_treatments" class="img img-responsive">
+                        <img src="/uploads/<%= service.images[0] %>" alt="spa_treatments" class="img img-responsive">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ======================================= 
-        ==End Treatment information section== 
+    <!-- =======================================
+        ==End Treatment information section==
     =======================================-->
 
-    <!-- ======================================= 
-        ==Start Treatment details section==  
+    <!-- =======================================
+        ==Start Treatment details section==
     =======================================-->
     <section class="treatment_details_section">
         <div class="container">
@@ -85,7 +84,7 @@
 
                 <div class="col-md-7 col-md-push-5">
                     <div class="treatment_details">
-                        <p>As you might have guessed, most designers choose this unit arbitrarily. The problem with this approach is that the resulting baseline grid unit is not directly related to the primary font size, which is the most fundamental design element on the page. <br/><br/> Instead of relying on arbitrary selection, wouldn’t it be nice if there were a way to determine the perfect typography settings based on a given context? <br/><br/> As it turns out, the golden ratio provides us with a guide—a formula—for prop er typesetting. Because of this, we can now set our type with absolute certainty in any situation! Better still, we can use this information about typography...</p>
+                        <p><%- service.content %></p>
                         <a href="#" class="brochure color_d5 fw_700"><i class="fa fa-file-pdf-o"></i> Download Brochure</a>
                     </div>
                 </div>
@@ -93,18 +92,18 @@
 
                 <div class="col-md-5 col-md-pull-7">
                     <div class="treatment_details_img pos_relative">
-                        <img src="images/spa_bed.jpg" alt="spa_bed" class="img img-responsive spa_bed">
+                        <img src="/uploads/<%= service.images[1] %>" alt="spa_bed" class="img img-responsive spa_bed">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ======================================= 
-        ==End Treatment details section==  
+    <!-- =======================================
+        ==End Treatment details section==
     =======================================-->
 
-    <!-- ======================================= 
-        ==Start related services section==  
+    <!-- =======================================
+        ==Start related services section==
     =======================================-->
     <section class="related_service_section pt_50 pb_100">
         <div class="container">
@@ -113,7 +112,7 @@
 
                 <div class="col-md-4">
                     <div class="single_service pos_relative">
-                        <img src="images/service_img7.jpg" alt="service img" class="img img-responsive">
+                        <img src="/images/service_img7.jpg" alt="service img" class="img img-responsive">
                         <div class="link_hover"><a href="#"><i class="fa fa-link color_ff"></i></a></div>
                         <h6><a href="#" class="color_d5">Beauty Treatment</a><span class="pull-right fw_500">$59</span></h6>
                     </div>
@@ -121,7 +120,7 @@
 
                 <div class="col-md-4">
                     <div class="single_service pos_relative">
-                        <img src="images/service_img8.jpg" alt="service img" class="img img-responsive">
+                        <img src="/images/service_img8.jpg" alt="service img" class="img img-responsive">
                         <div class="link_hover"><a href="#"><i class="fa fa-link color_ff"></i></a></div>
                         <h6><a href="#" class="color_d5">Spa Process</a><span class="pull-right fw_500">$70</span></h6>
                     </div>
@@ -129,7 +128,7 @@
 
                 <div class="col-md-4">
                     <div class="single_service pos_relative">
-                        <img src="images/service_img9.jpg" alt="service img" class="img img-responsive">
+                        <img src="/images/service_img9.jpg" alt="service img" class="img img-responsive">
                         <div class="link_hover"><a href="#"><i class="fa fa-link color_ff"></i></a></div>
                         <h6><a href="#" class="color_d5">Manicure & Pedicure</a><span class="pull-right fw_500">$40</span></h6>
                     </div>
@@ -138,8 +137,8 @@
             </div>
         </div>
     </section>
-    <!-- ======================================= 
-        ==End related services section==  
+    <!-- =======================================
+        ==End related services section==
     =======================================-->
 
 <%- include partials/footer %>

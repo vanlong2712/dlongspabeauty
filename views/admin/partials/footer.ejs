@@ -67,10 +67,9 @@
 <!-- Include Editor JS files. -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.5/js/froala_editor.pkgd.min.js"></script>
 
-
-    <% if(typeof noti != 'undefined') {%>
-    <script>toastr.success("<%=noti%>")</script>
-    <% } %>
+<% if (typeof req == 'object' && req.toastr) { %>
+<%- req.toastr.render(); %>
+<%}%>
 
 <!-- Initialize the editor. -->
 <script>
@@ -80,11 +79,11 @@
         })
     });
 
-    function accept_enable(msg) {
-        if(window.confirm(msg)){
-            return true;
-        }
-        return false;
+    function accept_delete(msg){
+      if(window.confirm(msg)){
+        return true;
+      }
+      return false;
     }
 
     $(document).ready(function(){
@@ -107,30 +106,6 @@
             $.get("./service-enable/" + id + "/" + boolean, (data) => {
                 console.log(data);
             }).then(() => toastr.success(msg));
-        });
-
-        $(document).on("click","#service-delete", function(){
-            var id = $(this).attr("serviceId");
-            var name = $(this).attr("serviceName")
-            msg = 'Bạn muốn xóa dịch vụ "'+ name +'"?';
-
-            if(window.confirm(msg)){
-
-                $.get("./service-delete/" + id, function(data) {
-                    toastr.success(data);
-                    setTimeout(function(){
-                        window.location.href="./service-list";
-                    }, 1500);
-                });
-
-
-            }
-            return false;
-        });
-
-        $(document).on("click","#service-edit", function(){
-            var id = $(this).attr("serviceId");
-            location.href="./service-edit/"+id;
         });
     });
 </script>

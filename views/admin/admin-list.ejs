@@ -1,0 +1,44 @@
+<%- include partials/header %>
+
+<div class="row">
+    <div class="col-lg-6">
+        <section class="panel">
+            <header class="panel-heading">
+                Dịch Vụ
+            </header>
+            <table class="table table-striped table-advance table-hover">
+                <thead>
+                <tr>
+                    <th><i class="fa fa-bullhorn"></i> Email</th>
+                    <th><i class="fa fa-bullhorn"></i> Họ</th>
+                    <th><i class="fa fa-bullhorn"></i> Tên</th>
+                    <!--<th class="hidden-phone"><i class="fa fa-question-circle"></i> Descrition</th>-->
+                    <!--<th><i class="fa fa-bookmark"></i> Profit</th>-->
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <% for(var i in data) {
+                    if(data[i].email !== req.user.email) {
+                %>
+                <tr>
+                    <td><a href="#"><%= data[i].email %></a></td>
+                    <td><a href="#"><%= data[i].lastName %></a></td>
+                    <td><a href="#"><%= data[i].firstName %></a></td>
+                    <!--<td class="hidden-phone">Lorem Ipsum dorolo imit</td>-->
+                    <!--<td>12120.00$ </td>-->
+                    <td>
+                      <span>
+                        <a href="./admin-edit/<%= data[i].shortid %>" id="admin-edit" class="btn btn-primary btn-xs" ><i class="fa fa-pencil"></i></a>
+                      </span>
+                        <a href="./admin-delete/<%= data[i]._id %>" onclick='return accept_delete("Bạn có chắc muốn xóa admin \"<%= data[i].email %>\" ?")' class="btn btn-danger btn-xs" ><i class="fa fa-trash-o "></i></a>
+                    </td>
+                </tr>
+                <% }} %>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</div>
+<!--footer start-->
+<%- include partials/footer %>

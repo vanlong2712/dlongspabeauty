@@ -16,6 +16,10 @@
     <link href="/stylesheets/admin/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/admin/bootstrap-reset.css" rel="stylesheet">
     <link href="/stylesheets/admin/bootstrap-fileupload.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-timepicker/compiled/timepicker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-datetimepicker/css/datetimepicker.css" />
     <!--external css-->
     <link href="/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/admin/tree-style.css" />
@@ -32,7 +36,7 @@
     <link href="/stylesheets/admin/style-responsive.css" rel="stylesheet" />
     <link href="/stylesheets/admin/dropzone.css" rel="stylesheet"/>
     <!-- <link href="/stylesheets/admin/toastr.css" rel="stylesheet" type="text/css" /> -->
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
     <script src="/javascripts/admin/html5shiv.js"></script>
@@ -58,7 +62,7 @@
             <i class="fa fa-bars"></i>
         </div>
         <!--logo start-->
-        <a href="index.html" class="logo">Flat<span>lab</span></a>
+        <a href="/187_admin/" class="logo">Flat<span>lab</span></a>
         <!--logo end-->
         <div class="nav notify-row" id="top_menu">
             <!--  notification start -->
@@ -277,15 +281,13 @@
                 <li class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <img alt="" src="/images/admin/avatar1_small.jpg">
-                        <span class="username">Jhon Doue</span>
+                        <span class="username"><%= req.user.firstName %></span>
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu extended logout">
                         <div class="log-arrow-up"></div>
                         <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
-                        <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
-                        <li><a href="#"><i class="fa fa-bell-o"></i> Notification</a></li>
-                        <li><a href="login.html"><i class="fa fa-key"></i> Log Out</a></li>
+                        <li><a href="./logout"><i class="fa fa-key"></i> Log Out</a></li>
                     </ul>
                 </li>
                 <!-- user login dropdown end -->
@@ -307,6 +309,17 @@
                     <ul class="sub">
                         <li><a  href="/187_admin/service-list">Danh Sách Dịch Vụ</a></li>
                         <li><a  href="/187_admin/service-create">Tạo Dịch Vụ</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu">
+                    <a href="javascript:;" >
+                        <i class="fa fa-laptop"></i>
+                        <span>Quản Lí Người Dùng</span>
+                    </a>
+                    <ul class="sub">
+                      <li><a  href="/187_admin/admin-list">Danh Sách Admin</a></li>
+                      <li><a  href="/187_admin/admin-create">Tạo Admin</a></li>
                     </ul>
                 </li>
 

@@ -2,16 +2,21 @@ var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
+var flash= require('connect-flash');
 var session = require('express-session');
 var cookieParser = require('cookie-parser');
+var toastr = require('express-toastr');
+const Passport=require('Passport');
+const LocalStrategy=require('Passport-local').Strategy;
 var bodyParser = require('body-parser');
 /*connect to mongoose*/
-global.mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1/spabeauty');
+const {mongoose} = require('./db/mongoose');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
 var admin = require('./routes/admin');
+var login_admin = require('./routes/login_admin');
+var admin_service = require('./routes/admin_service');
 
 var app = express();
 
@@ -30,11 +35,20 @@ app.use(session({
     saveUninitialized: true,
     resave: true
 }));
+app.use(Passport.initialize());
+app.use(Passport.session());
+app.use(flash());
+// Load express-toastr
+// You can pass an object of default options to toastr(), see example/index.coffee
+app.use(toastr());
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
 app.use('/187_admin', admin);
+app.use('/187_admin', login_admin);
+app.use('/187_admin', admin_service);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

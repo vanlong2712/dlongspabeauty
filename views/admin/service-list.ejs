@@ -31,8 +31,10 @@
                                data-toggle="switch" serviceName="<%= services[i].name %>" serviceId="<%= services[i]._id %>" />
                     </td>
                     <td>
-                        <button id="service-edit" serviceId="<%= services[i]._id %>" class="btn btn-primary btn-xs" ><i class="fa fa-pencil"></i></button>
-                        <button id="service-delete" serviceName="<%= services[i].name %>" serviceId="<%= services[i]._id %>" class="btn btn-danger btn-xs" ><i class="fa fa-trash-o "></i></button>
+                      <span>
+                        <a href="./service-edit/<%= services[i]._id %>" class="btn btn-primary btn-xs" ><i class="fa fa-pencil"></i></a>
+                      </span>
+                        <a href="./service-delete/<%= services[i]._id %>" onclick='return accept_delete("Bạn có chắc muốn xóa dịch vụ \"<%= services[i].name %>\" ?")' class="btn btn-danger btn-xs" ><i class="fa fa-trash-o "></i></a>
                     </td>
                 </tr>
                 <% } %>
