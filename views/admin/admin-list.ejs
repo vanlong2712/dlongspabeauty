@@ -12,6 +12,7 @@
                     <th><i class="fa fa-bullhorn"></i> Email</th>
                     <th><i class="fa fa-bullhorn"></i> Họ</th>
                     <th><i class="fa fa-bullhorn"></i> Tên</th>
+                    <th><i class="fa fa-bullhorn"></i> Hoạt động?</th>
                     <!--<th class="hidden-phone"><i class="fa fa-question-circle"></i> Descrition</th>-->
                     <!--<th><i class="fa fa-bookmark"></i> Profit</th>-->
                     <th></th>
@@ -25,13 +26,20 @@
                     <td><a href="#"><%= data[i].email %></a></td>
                     <td><a href="#"><%= data[i].lastName %></a></td>
                     <td><a href="#"><%= data[i].firstName %></a></td>
+                    <td>
+                        <input name="ToggleInAdminList" id="enableToggle" type="checkbox"
+                            <% if(typeof data[i].isActive !== 'undefined' && data[i].isActive != false) {%>
+                                    checked = ''
+                            <% } %>
+                               data-toggle="switch" adminEmail="<%= data[i].email %>" adminId="<%= data[i]._id %>" />
+                    </td>
                     <!--<td class="hidden-phone">Lorem Ipsum dorolo imit</td>-->
                     <!--<td>12120.00$ </td>-->
                     <td>
                       <span>
                         <a href="./admin-edit/<%= data[i].shortid %>" id="admin-edit" class="btn btn-primary btn-xs" ><i class="fa fa-pencil"></i></a>
                       </span>
-                        <a href="./admin-delete/<%= data[i]._id %>" onclick='return accept_delete("Bạn có chắc muốn xóa admin \"<%= data[i].email %>\" ?")' class="btn btn-danger btn-xs" ><i class="fa fa-trash-o "></i></a>
+                        <a href="./admin-delete/<%= data[i]._id %>" onclick='return accept_delete("Bạn có chắc muốn xóa admin \"<%= data[i].email %>\" ? \n Lưu ý tài khoản sẽ bị xóa vĩnh viễn.")' class="btn btn-danger btn-xs" ><i class="fa fa-trash-o "></i></a>
                     </td>
                 </tr>
                 <% }} %>

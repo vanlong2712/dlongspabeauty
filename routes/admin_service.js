@@ -114,13 +114,9 @@ router.get('/service-edit/:id', (req, res, next) => {
 });
 
 router.post('/service-edit',upload.any(), (req, res, next) => {
-  if(!req.isAuthenticated() || req.user.role !== 1) {
-    res.redirect('./login');
-  }
-  if(!req.user.isPriviledge.includes('service')) {
-    req.toastr.warning('Bạn chưa có quyền truy cập vào Dịch Vụ');
-    res.redirect('./');
-  }
+  authenticateAdmin(req,res);
+  priviledgeService(req,res);
+
   Service.findById(req.body.serviceId, (err, service) => {
     if(err) throw err;
     // console.log(service);
@@ -167,16 +163,11 @@ router.post('/service-edit',upload.any(), (req, res, next) => {
 });
 
 router.get("/service-enable/:id/:boolean", function(req, res, next) {
-  if(!req.isAuthenticated() || req.user.role !== 1) {
-    res.redirect('./login');
-  }
-  if(!req.user.isPriviledge.includes('service')) {
-    req.toastr.warning('Bạn chưa có quyền truy cập vào Dịch Vụ');
-    res.redirect('./');
-  }
+  authenticateAdmin(req,res);
+  priviledgeService(req,res);
+
    var id = req.params.id;
    var boolean = req.params.boolean;
-   console.log(req.params);
 
    Service.findOneAndUpdate({_id : id}, {$set:{isEnabled: boolean}}, {new: true}, function(err, doc){
        if(err){

@@ -45,7 +45,6 @@ const UserSchema = mongoose.Schema({
     year: {
       type: Number,
     }
-
   },
   phone_number: {
     type: String,
@@ -65,7 +64,12 @@ const UserSchema = mongoose.Schema({
     type: [mongoose.Schema.Types.ObjectId],
     ref: 'Product'
   }],
-  CMND: String
+  CMND: String,
+  isActive: {
+    type: Boolean,
+    default: false
+  },
+  activeCode: String
 });
 
 // Methods

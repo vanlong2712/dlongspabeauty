@@ -76,14 +76,18 @@ Passport.use('local-login', new LocalStrategy({
       errorToaStr(req, 'Không tìm thấy email này');
       return done(null,false);
     }
-
     if(user.role !== 1) {
       errorToaStr(req, 'Không tìm thấy email này');
       return done(null,false);
     }
 
+
     bcrypt.compare(password, user.password, (err, res) => {
       if (res) {
+        if(!user.isActive) {
+          errorToaStr(req, 'Tài khoản này đang tạm khóa');
+          return done(null,false);
+        }
         successToaStr(req, 'Bạn đã đăng nhập thành công', `Xin chào ${user.firstName}`);
         return done(null,user);
       } else {

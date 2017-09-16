@@ -41,6 +41,9 @@ var successToaStr = async (req,msg,title) => {
 var authenticateAdmin = (req, res) => {
   if(!req.isAuthenticated() || req.user.role !== 1) {
     res.redirect('/187_admin/login');
+  } else if (!req.user.isActive) {
+    req.logout();
+    res.redirect('/187_admin/login');
   }
 }
 

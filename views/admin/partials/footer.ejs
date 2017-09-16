@@ -90,22 +90,35 @@
         $("div.switch").on("click", function(){
             var input = $(this).find("input");
             var nameToggle = input.attr("name");
-            if(nameToggle !== 'ToggleInList') {
-              return false;
-            }
             var msg = '';
-            id = input.attr("serviceId");
-            var boolean = '';
-            if(!input.is(':checked')) {
-                msg = 'Dịch vụ "'+ input.attr("serviceName") +'" ngưng hoạt động';
-                boolean = false;
-            }else {
-                msg = 'Dịch vụ "'+ input.attr("serviceName") +'" Hoạt động';
-                boolean = true;
+            if(nameToggle === 'ToggleInServiceList') {
+              id = input.attr("serviceId");
+              var boolean = '';
+              if(!input.is(':checked')) {
+                  msg = 'Dịch vụ "'+ input.attr("serviceName") +'" ngưng hoạt động';
+                  boolean = false;
+              }else {
+                  msg = 'Dịch vụ "'+ input.attr("serviceName") +'" Hoạt động';
+                  boolean = true;
+              }
+              $.get("./service-enable/" + id + "/" + boolean, (data) => {
+                  console.log(data);
+              }).then(() => toastr.success(msg));
+            }else if(nameToggle === 'ToggleInAdminList') {
+              id = input.attr("adminId");
+              var boolean = '';
+              if(!input.is(':checked')) {
+                  msg = 'Admin "'+ input.attr("adminEmail") +'" ngưng hoạt động';
+                  boolean = false;
+              }else {
+                  msg = 'Admin "'+ input.attr("adminEmail") +'" Hoạt động';
+                  boolean = true;
+              }
+              $.get("./admin-active/" + id + "/" + boolean, (data) => {
+                  console.log(data);
+              }).then(() => toastr.success(msg));
             }
-            $.get("./service-enable/" + id + "/" + boolean, (data) => {
-                console.log(data);
-            }).then(() => toastr.success(msg));
+
         });
     });
 </script>
