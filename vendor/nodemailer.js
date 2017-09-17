@@ -11,8 +11,8 @@ var justSendAEmail = (object) => {
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-            user: 'd.long271293@gmail.com', // generated ethereal user
-            pass: '025334886'  // generated ethereal password
+            user: 'phu.nguyen09995@gmail.com', // generated ethereal user
+            pass: 'Neversaynever123'  // generated ethereal password
         }
     });
 
@@ -28,7 +28,7 @@ var justSendAEmail = (object) => {
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"XinhXinhSalon 👻" <d.long271293@gmail.com>', // sender address
+        from: '"XinhXinhSalon 👻" <phu.nguyen09995@gmail.com>', // sender address
         to: object.toEmail, // list of receivers
         subject: object.subject, // Subject line
         text: object.text, // plain text body
