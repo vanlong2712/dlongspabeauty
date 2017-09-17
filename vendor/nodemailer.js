@@ -28,7 +28,7 @@ var justSendAEmail = (object) => {
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"XinhXinhSalon 👻" <d.long271293@gmail.com>', // sender address
+        from: '"XinhXinhSalon 👻" <d.long939393@gmail.com>', // sender address
         to: object.toEmail, // list of receivers
         subject: object.subject, // Subject line
         text: object.text, // plain text body
