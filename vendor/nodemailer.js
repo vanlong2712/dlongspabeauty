@@ -11,8 +11,8 @@ var justSendAEmail = (object) => {
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'd.long271293@gmail.com', // generated ethereal user
-            pass: '025334886'  // generated ethereal password
+            user: 'd.long939393@gmail.com', // generated ethereal user
+            pass: 'Long2712!'  // generated ethereal password
         }
     });
 
