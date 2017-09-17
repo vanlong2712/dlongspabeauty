@@ -18,7 +18,7 @@ var admin = require('./routes/admin');
 var login_admin = require('./routes/login_admin');
 var admin_service = require('./routes/admin_service');
 
-global.httpLinkAdmin = 'https://spabeauty.herokuapp.com/187_admin';
+// global.httpLinkAdmin = 'https://spabeauty.herokuapp.com/187_admin';
 
 var app = express();
 

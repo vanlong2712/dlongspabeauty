@@ -16,6 +16,16 @@ var justSendAEmail = (object) => {
         }
     });
 
+        // verify connection configuration
+    transporter.verify(function(error, success) {
+       if (error) {
+            console.log(error);
+       } else {
+            console.log('Server is ready to take our messages');
+       }
+    });
+
+
     // setup email data with unicode symbols
     let mailOptions = {
         from: '"XinhXinhSalon 👻" <d.long271293@gmail.com>', // sender address
