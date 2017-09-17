@@ -63,7 +63,7 @@ router.route('/admin-create')
               var html = `XinhXinhSalon cung cấp tài khoản truy cập quyền quản trị: <br /><br />
                           Tài khoản: ${user.email} <br />
                           Mật khẩu : ${passwordGenerated.trim()} <br /><br />
-                          Vui lòng nhấn vào <a href='${httpLinkAdmin}/admin-activeCode/${user._id}/${user.activeCode}' >đây</a> để khởi động tài khoản.`;
+                          Vui lòng nhấn vào <a href='https://spabeauty.herokuapp.com/187_admin/admin-activeCode/${user._id}/${user.activeCode}' >đây</a> để khởi động tài khoản.`;
               var object = {
                 toEmail: user.email,
                 subject: "XinhXinhSalon: Cung cấp tài khoản truy cập quyền quản trị",
