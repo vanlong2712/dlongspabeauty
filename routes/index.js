@@ -5,7 +5,7 @@ var Service = require('../model/service');
 
 
 /* GET home page. */
-router.get('/', async (req, res, next) => {
+router.get('/', async function (req, res, next) {
   var services = await Service.find();
   res.render('index', { title: 'Beauty Spa', services: services});
 });
