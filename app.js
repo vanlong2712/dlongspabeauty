@@ -6,8 +6,8 @@ var flash= require('connect-flash');
 var session = require('express-session');
 var cookieParser = require('cookie-parser');
 var toastr = require('express-toastr');
-const Passport=require('Passport');
-const LocalStrategy=require('Passport-local').Strategy;
+const Passport=require('passport');
+const LocalStrategy=require('passport-local').Strategy;
 var bodyParser = require('body-parser');
 /*connect to mongoose*/
 const {mongoose} = require('./db/mongoose');

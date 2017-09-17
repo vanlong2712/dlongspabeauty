@@ -4,8 +4,8 @@ const bcrypt = require('bcryptjs');
 const dbUser = require('../model/user');
 var {successToaStr, errorToaStr} = require('../vendor/admin_script');
 
-const Passport=require('Passport');
-const LocalStrategy=require('Passport-local').Strategy;
+const Passport=require('passport');
+const LocalStrategy=require('passport-local').Strategy;
 
 /* START LOGIN */
 router.route('/login')
