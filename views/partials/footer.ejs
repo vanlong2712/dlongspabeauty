@@ -130,6 +130,9 @@
 <!--date time picker js-->
 <script type="text/javascript" src="/javascripts/moment.js"></script>
 <script type="text/javascript" src="/javascripts/bootstrap-datetimepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/locale/vi.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/locale/es.js"></script>
 
 <!--mixitup min js-->
 <script type="text/javascript" src="/javascripts/mixitup.min.js"></script>
@@ -163,6 +166,18 @@
 
 <!-- all jQuary activation code here and always it will be bottom of all script tag -->
 <script type="text/javascript" src="/javascripts/activation-jQuary.js"></script>
+
+<script>
+$(document).ready(function() {
+  $('.input-group.date')
+    .data('DateTimePicker')
+    .locale('vi');
+
+  // $('#datetimepicker1')
+  //   .data('DateTimePicker')
+  //   .locale('vi');
+});
+</script>
 </body>
 
 

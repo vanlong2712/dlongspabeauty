@@ -4,8 +4,8 @@ const shortid = require('shortid');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
-    // we're connected!
-    console.log('we\'re connected to userSchema!');
+  // we're connected!
+  console.log("we're connected to userSchema!");
 });
 
 const UserSchema = mongoose.Schema({
@@ -20,12 +20,12 @@ const UserSchema = mongoose.Schema({
     unique: true
   },
   password: {
-  type: String,
-  trim: true
+    type: String,
+    trim: true
   },
   firstName: {
-  type: String,
-  trim: true
+    type: String,
+    trim: true
   },
   lastName: {
     type: String,
@@ -37,13 +37,13 @@ const UserSchema = mongoose.Schema({
   },
   birthdate: {
     date: {
-      type: Number,
+      type: Number
     },
     month: {
-      type: Number,
+      type: Number
     },
     year: {
-      type: Number,
+      type: Number
     }
   },
   phone_number: {
@@ -57,13 +57,15 @@ const UserSchema = mongoose.Schema({
   },
   isPriviledge: [String],
   created: {
-    type : Date,
+    type: Date,
     default: Date.now
   },
-  saved_product: [{
-    type: [mongoose.Schema.Types.ObjectId],
-    ref: 'Product'
-  }],
+  saved_product: [
+    {
+      type: [mongoose.Schema.Types.ObjectId],
+      ref: 'Product'
+    }
+  ],
   CMND: String,
   isActive: {
     type: Boolean,
@@ -74,24 +76,24 @@ const UserSchema = mongoose.Schema({
 
 // Methods
 
-UserSchema.pre('save', function (next) {
+UserSchema.pre('save', function(next) {
   var user = this;
 
-  if(user.isModified('password')) { // chỉ khi password bị chỉnh sửa thì mới hash password.
-                                    // nếu ko sẽ phát sinh ra lỗi khi mỗi lần gọi save function
+  if (user.isModified('password')) {
+    // chỉ khi password bị chỉnh sửa thì mới hash password.
+    // nếu ko sẽ phát sinh ra lỗi khi mỗi lần gọi save function
     bcrypt.genSalt(10, (err, salt) => {
       bcrypt.hash(user.password, salt, (err, hash) => {
         user.password = hash;
         next();
-      })
-    })
+      });
+    });
   } else {
     next();
   }
 });
 
-
 // create model
-const service = mongoose.model('User',UserSchema);
+const service = mongoose.model('User', UserSchema);
 
 module.exports = service;
