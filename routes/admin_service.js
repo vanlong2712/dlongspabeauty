@@ -134,7 +134,7 @@ router.post('/service-edit',upload.any(), (req, res, next) => {
     if(!req.session.non_images_service) {
       req.session.non_images_service = ["fImage1","fImage2"];
     }
-    if(req.session.non_images_service.indexOf('fImage1') === 0 && req.session.non_images_service.indexOf('fImage2') === 0) { // có hình fImage1 và ko có hình fImage2
+    if(req.session.non_images_service.indexOf('fImage1') === 0 && req.session.non_images_service.indexOf('fImage2') === 1) { // ko có hình fImage1 và ko có hình fImage2
         req.session.images = ["", ""];
     }
     if(req.session.non_images_service.indexOf('fImage2') === 0 && req.session.non_images_service.indexOf('fImage1') == -1) { // có hình fImage1 và ko có hình fImage2
