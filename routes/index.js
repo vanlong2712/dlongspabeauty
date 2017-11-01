@@ -67,7 +67,7 @@ router.get('/product', async (req, res, next) => {
 });
 
 /* CHANGE LANGUAGE */
-router.get('/changeLanguage/:language/:url', (req, res, next) => {
+router.get('/changeLanguage/:language/?:url', (req, res, next) => {
   var language = req.params.language;
   var url = req.protocol + '://' + req.get('host') + '/' + req.params.url;
   console.log(language);
