@@ -166,81 +166,18 @@
                     <div id="menuzord" class="menuzord">
                         <a href="index.html" class="menuzord-brand"><img id="logo" src="/images/logo.png" alt="logo"></a>
                         <ul class="menuzord-menu menuzord-right">
-                            <li class="active"><a href="/" title="Home">Home</a></li>
-                            <li><a href="/services" title="Service">Service</a></li>
-                            <li><a href="#" title="Shop">Shop</a>
-                                <div class="megamenu">
-                                    <div class="megamenu-row">
-                                        <div class="col3 clearfix">
-                                            <ul>
-                                                <li>
-                                                    <h6>Shop Full Width</h6>
-                                                </li>
-                                                <li><a href="shop_fullwidth.html">Shop Full Width (4 Column)</a></li>
-                                            </ul>
-                                            <ul>
-                                                <li>
-                                                    <h6>Shop With Sidebar</h6>
-                                                </li>
-                                                <li><a href="shop_left_sidebar.html">Shop (Left Sidebar)</a></li>
-                                                <li><a href="shop_right_sidebar.html">Shop (Right Sidebar)</a></li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="col3 clearfix">
-                                            <ul>
-                                                <li>
-                                                    <h6>Shop-Eyelash</h6>
-                                                </li>
-                                                <li><a href="#">Beetroot collection</a></li>
-                                                <li><a href="#">Lobster ravioli</a></li>
-                                                <li><a href="#">Pollo farcito</a></li>
-                                            </ul>
-                                            <ul>
-                                                <li>
-                                                    <h6>Shop-Nail care</h6>
-                                                </li>
-                                                <li><a href="#">organic egg</a></li>
-                                                <li><a href="#">Beetroot collection</a></li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="col6">
-                                            <div class="megamenu_carousel owl-carousel">
-                                                <div class="single_carousel">
-                                                    <img src="/images/mega_carousel1.jpg" class="img img-responsive" alt="mega_carousel">
-                                                </div>
-                                                <div class="single_carousel">
-                                                    <img src="/images/mega_carousel2.png" class="img img-responsive" alt="mega_carousel">
-                                                </div>
-                                                <div class="single_carousel">
-                                                    <img src="/images/mega_carousel3.png" class="img img-responsive" alt="mega_carousel">
-                                                </div>
-                                                <div class="single_carousel">
-                                                    <img src="/images/mega_carousel4.png" class="img img-responsive" alt="mega_carousel">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--/col-->
-                                    </div>
-                                </div>
-                            </li>
-                            <li><a href="#" title="Blog">Blog</a>
-                                <ul class="dropdown triangle">
-                                    <li><a href="#">Blog pages</a>
-                                        <ul class="dropdown dropdown-left">
-                                            <li><a href="blog_fullwidth_1Col.html">Blog full width</a></li>
-                                            <li><a href="blog_fullwidth_2Col.html">Blog full width Grid</a></li>
-                                            <li><a href="blog_left_sidebar_1Col.html">Blog left sidebar (1 Column)</a></li>
-                                            <li><a href="blog_left_sidebar_2Col.html">Blog left sidebar (2 Column)</a></li>
-                                            <li><a href="blog_right_sidebar_1Col.html">Blog Right sidebar (1 Column)</a></li>
-                                            <li><a href="blog_right_sidebar_2Col.html">Blog right sidebar (2 Column)</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="blog_details.html">blog details</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.html" title="Contact">Contact</a></li>
+                            <li class="active"><a href="/" title="Home"><%= staticLanguage.home %></a></li>
+                            <li><a href="/services" title="Service"><%= staticLanguage.service %></a></li>
+                            <li><a href="/shop" title="Shop"><%= staticLanguage.shop %></a></li>
+                            <li><a href="/blogs" title="Blog">Blog</a></li>
+                            <li><a href="/contact" title="Contact"><%= staticLanguage.contact %></a></li>
+                            <%
+                              if(req.cookies.language == 'vn') {
+                                %> <li><a id="language" data="en" url="<%= req.originalUrl %>" href="#"><%= staticLanguage.language %></a></li> <%
+                              } else {
+                                %> <li><a id="language" data="vn" url="<%= req.originalUrl %>" href="#" title="Blog"><%= staticLanguage.language %></a></li> <%
+                              }
+                            %>
                             <li>
                                 <button id="search_button" type="button" data-toggle="modal" data-target=".bs-example-modal-sm"><i class="fa fa-search"></i></button>
                             </li>

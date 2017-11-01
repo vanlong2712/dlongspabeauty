@@ -1,0 +1,16 @@
+{
+  "vn": {
+    "home": "trang chủ",
+    "service": "dịch vụ",
+    "shop": "cửa hàng",
+    "contact": "liên lạc",
+    "language": "English"
+  },
+  "en": {
+    "home": "home",
+    "service": "service",
+    "shop": "shop",
+    "contact": "contact",
+    "language": "Tiếng Việt"
+  }
+}

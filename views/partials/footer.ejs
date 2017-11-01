@@ -169,13 +169,22 @@
 
 <script>
 $(document).ready(function() {
+  $('#language').on('click', function() {
+    var language = $(this).attr('data');
+    var url = $(this).attr('url');
+    $.get('./changeLanguage/' + language + url).then(
+      () => (window.location.href = url)
+    );
+  });
   $('.input-group.date')
     .data('DateTimePicker')
     .locale('vi');
 
-  // $('#datetimepicker1')
-  //   .data('DateTimePicker')
-  //   .locale('vi');
+  if ($('#datetimepicker1').length != 0) {
+    $('#datetimepicker1')
+      .data('DateTimePicker')
+      .locale('vi');
+  }
 });
 </script>
 </body>
