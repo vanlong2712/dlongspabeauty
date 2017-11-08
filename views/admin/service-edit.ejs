@@ -13,49 +13,92 @@
                         <form action="/187_admin/service-edit" method="POST" enctype="multipart/form-data">
                             <input type="hidden" name="serviceId" value="<%= service._id %>" />
                             <div class="col-lg-12">
-                                <div class="form-group">
-                                    <label for="txtName">Tên Dịch Vụ  <span style="color:red">*</span></label>
-                                    <input type="text" class="form-control" name="txtName" placeholder="Tên Dịch Vụ " value="<%= service.name %>" required/>
-                                </div>
-                                <div class="form-group">
-                                    <label for="txtTitle">Tiêu Đề Dịch Vụ  <span style="color:red">*</span></label>
-                                    <input type="text" class="form-control" name="txtTitle" placeholder="Tiêu Đề Dịch Vụ " value="<%= service.title %>" required/>
-                                </div>
-                                <div class="form-group">
-                                    <label for="txtTitleSEO">Tiêu Đề (SEO) <span style="color:red">*</span></label>
-                                    <input type="text" class="form-control" name="txtTitleSEO" placeholder="Tiêu Đề (SEO)" value="<%= service.title_SEO %>" required/>
-                                </div>
-                                <div class="form-group">
-                                    <label for="txtTime">Ngày(Giờ) hoạt động  <span style="color:red">*</span></label>
-                                    <input type="text" class="form-control" name="txtTime" placeholder="Ngày(Giò) hoạt động" value="<%= service.time %>" required/>
-                                </div>
-                                <div class="form-group">
-                                    <label for="txtPrice">Giá <span style="color:red">*</span></label>
-                                    <input type="text" class="form-control" name="txtPrice" placeholder="Giá " value="<%= service.price %>" required/>
-                                </div>
-                                <div class="form-group">
-                                    <label for="txtDuration">Thời lượng <span style="color:red">*</span></label>
-                                    <input type="text" class="form-control" name="txtDuration" placeholder="Thời lượng" value="<%= service.duration %>" required/>
-                                </div>
-                                <div class="form-group">
-                                    <label for="txtDescription">Mô tả  <span style="color:red">*</span></label>
-                                    <input type="text" class="form-control" name="txtDescription" placeholder="Mô tả" value="<%= service.description %>" required/>
-                                </div>
-                                <div class="form-group">
-                                    <label for="txtContent">Nội dung  <span style="color:red">*</span></label>
-                                    <textarea type="text" name="txtContent"  required><%= service.content %></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label for="txtKey">Từ khóa(SEO)  <span style="color:red">*</span></label>
-                                    <div class="panel-body">
-                                        <input name="txtKeyWord" id="tagsinput" class="tagsinput" value="<%= service.keywords %>" required/>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="txtIcon">Icon <span style="color:red">*</span></label>
-                                    <input type="text" class="form-control" name="txtIcon" placeholder="Icon" value="<%= service.icon %>" required/>
-                                </div>
+                              <div class="form-group">
+                                  <label for="txtName">URL Dịch Vụ  <span style="color:red">*</span></label>
+                                  <input type="text" class="form-control" name="txtNameURL" placeholder="URL Dịch Vụ " value="<%- (typeof service != 'undefined') ? service.name_url : ''%>" required/>
+                              </div>
+                              <div class="form-group">
+                                  <label for="txtTitleSEO">Tiêu Đề (SEO) <span style="color:red">*</span></label>
+                                  <input type="text" class="form-control" name="txtTitleSEO" placeholder="Tiêu Đề (SEO)" value="<%- (typeof service != 'undefined') ? service.title_SEO : ''%>" required/>
+                              </div>
+                              <div class="form-group">
+                                  <label for="txtIcon">Icon <span style="color:red">*</span></label>
+                                  <input type="text" class="form-control" name="txtIcon" placeholder="Icon" value="<%- (typeof service != 'undefined') ? service.icon : ''%>" required/>
+                              </div>
                             </div>
+                              <div class="col-lg-6">
+                                  <div class="form-group">
+                                      <label for="txtNameVN">Tên Dịch Vụ (VN)  <span style="color:red">*</span></label>
+                                      <input type="text" class="form-control" name="txtNameVN" placeholder="Tên Dịch Vụ " value="<%- (typeof service != 'undefined') ? service.content_vn.name : ''%>" required/>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="txtTitleVN">Tiêu Đề Dịch Vụ (VN)  <span style="color:red">*</span></label>
+                                      <input type="text" class="form-control" name="txtTitleVN" placeholder="Tiêu Đề Dịch Vụ " value="<%- (typeof service != 'undefined') ? service.content_vn.title : ''%>" required/>
+                                  </div>
+
+                                  <div class="form-group">
+                                      <label for="txtTimeVN">Ngày(Giờ) hoạt động (VN)  <span style="color:red">*</span></label>
+                                      <input type="text" class="form-control" name="txtTimeVN" placeholder="Ngày(Giò) hoạt động" value="<%- (typeof service != 'undefined') ? service.content_vn.time : ''%>" required/>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="txtPriceVN">Giá (VN) <span style="color:red">*</span></label>
+                                      <input type="text" class="form-control" name="txtPriceVN" placeholder="Giá " value="<%- (typeof service != 'undefined') ? service.content_vn.price : ''%>" required/>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="txtDurationVN">Thời lượng (VN) <span style="color:red">*</span></label>
+                                      <input type="text" class="form-control" name="txtDurationVN" placeholder="Thời lượng" value="<%- (typeof service != 'undefined') ? service.content_vn.duration : ''%>" required/>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="txtDescriptionVN">Mô tả (VN)  <span style="color:red">*</span></label>
+                                      <input type="text" class="form-control" name="txtDescriptionVN" placeholder="Mô tả" value="<%- (typeof service != 'undefined') ? service.content_vn.description : ''%>" required/>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="txtContentVN">Nội dung (VN)  <span style="color:red">*</span></label>
+                                      <textarea type="text" name="txtContentVN" required><%- (typeof service != 'undefined') ? service.content_vn.content : ''%></textarea>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="txtKeyWordVN">Từ khóa(SEO) (VN)  <span style="color:red">*</span></label>
+                                      <div class="panel-body">
+                                          <input name="txtKeyWordVN" id="tagsinput" class="tagsinput" value="<%- (typeof service != 'undefined') ? service.content_vn.keywords : ''%>" required/>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-6">
+                                  <div class="form-group">
+                                      <label for="txtNameEN">Tên Dịch Vụ (EN)  <span style="color:red">*</span></label>
+                                      <input type="text" class="form-control" name="txtNameEN" placeholder="Tên Dịch Vụ " value="<%- (typeof service != 'undefined') ? service.content_en.name : ''%>" required/>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="txtTitleEN">Tiêu Đề Dịch Vụ (EN)  <span style="color:red">*</span></label>
+                                      <input type="text" class="form-control" name="txtTitleEN" placeholder="Tiêu Đề Dịch Vụ " value="<%- (typeof service != 'undefined') ? service.content_en.title : ''%>" required/>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="txtTimeEN">Ngày(Giờ) hoạt động (EN)  <span style="color:red">*</span></label>
+                                      <input type="text" class="form-control" name="txtTimeEN" placeholder="Ngày(Giò) hoạt động" value="<%- (typeof service != 'undefined') ? service.content_en.time : ''%>" required/>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="txtPriceEN">Giá (EN) <span style="color:red">*</span></label>
+                                      <input type="text" class="form-control" name="txtPriceEN" placeholder="Giá " value="<%- (typeof service != 'undefined') ? service.content_en.price : ''%>" required/>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="txtDurationEN">Thời lượng (EN) <span style="color:red">*</span></label>
+                                      <input type="text" class="form-control" name="txtDurationEN" placeholder="Thời lượng" value="<%- (typeof service != 'undefined') ? service.content_en.duration : ''%>" required/>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="txtDescriptionEN">Mô tả (EN)  <span style="color:red">*</span></label>
+                                      <input type="text" class="form-control" name="txtDescriptionEN" placeholder="Mô tả" value="<%- (typeof service != 'undefined') ? service.content_en.description : ''%>" required/>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="txtContentEN">Nội dung (EN)  <span style="color:red">*</span></label>
+                                      <textarea type="text" name="txtContentEN" required><%- (typeof service != 'undefined') ? service.content_en.content : ''%></textarea>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="txtKeyWordEN">Từ khóa(SEO) (EN)  <span style="color:red">*</span></label>
+                                      <div class="panel-body">
+                                          <input name="txtKeyWordEN" id="tagsinput" class="tagsinput" value="<%- (typeof service != 'undefined') ? service.content_en.keywords : ''%>" required/>
+                                      </div>
+                                  </div>
+                              </div>
 
                             <div class="form-group last">
                                 <label class="control-label col-md-3">Hình 1</label>

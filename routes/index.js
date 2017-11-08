@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var { checkLanguage } = require('../vendor/script');
+var { checkLanguage, languageService } = require('../vendor/script');
 
 var Service = require('../model/service');
 
@@ -12,6 +12,9 @@ var title = 'Beauty Spa';
 router.get('/', async (req, res, next) => {
   const static = checkLanguage(req, res, staticLanguage);
   const services = await Service.find();
+  services.map((item, index) => {
+    languageService(req, item);
+  });
   res.render('index', {
     title: title,
     req: req,
@@ -24,6 +27,11 @@ router.get('/', async (req, res, next) => {
 router.get('/services', async (req, res, next) => {
   const static = checkLanguage(req, res, staticLanguage);
   var services = await Service.find();
+
+  services.map((item, index) => {
+    languageService(req, item);
+  });
+
   res.render('services', {
     title: title,
     req: req,
@@ -67,12 +75,10 @@ router.get('/product', async (req, res, next) => {
 });
 
 /* CHANGE LANGUAGE */
-router.get('/changeLanguage/:language/?:url', (req, res, next) => {
+router.get('/changeLanguage/:language', (req, res, next) => {
   var language = req.params.language;
   var url = req.protocol + '://' + req.get('host') + '/' + req.params.url;
-  console.log(language);
   res.cookie('language', language);
-  console.log(req.cookies.language);
   res.end();
 });
 

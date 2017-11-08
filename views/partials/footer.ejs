@@ -167,15 +167,42 @@
 <!-- all jQuary activation code here and always it will be bottom of all script tag -->
 <script type="text/javascript" src="/javascripts/activation-jQuary.js"></script>
 
+<script type="text/javascript" src="/javascripts/element-resize-detector.js"></script>
+
 <script>
 $(document).ready(function() {
   $('#language').on('click', function() {
     var language = $(this).attr('data');
+    console.log(language);
     var url = $(this).attr('url');
-    $.get('./changeLanguage/' + language + url).then(
+    $.get('./changeLanguage/' + language).then(
       () => (window.location.href = url)
     );
   });
+
+  // $('#price_filter').on('change', function() {
+  //   console.log('change');
+  // });
+  // var element = document.getElementsByClassName('v');
+  // var timeout = null;
+  // new ResizeSensor(element, function() {
+  //   clearTimeout(timeout);
+  //   timeout = setTimeout(function() {
+  //     console.log('scrolling stopped');
+  //   }, 1000);
+  // });
+  var erd = elementResizeDetectorMaker();
+
+  // erd.listenTo(document.getElementsByClassName('v'), function(element) {
+  //   var width = element.offsetWidth;
+  //   var height = element.offsetHeight;
+  //   console.log('Size: ' + width + 'x' + height);
+  // });
+
+  $('i.v').resize(function() {
+    console.log('change');
+  });
+
   $('.input-group.date')
     .data('DateTimePicker')
     .locale('vi');
