@@ -1,8 +1,9 @@
+const shortid = require('shortid');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
-    // we're connected!
-    console.log('we\'re connected to userSchema!');
+  // we're connected!
+  console.log("we're connected to notificationSchema!");
 });
 
 const NotificationSchema = mongoose.Schema({
@@ -19,6 +20,6 @@ const NotificationSchema = mongoose.Schema({
 });
 
 // create model
-const Notification = mongoose.model('Notification',NotificationSchema);
+const Notification = mongoose.model('Notification', NotificationSchema);
 
 module.exports = Notification;

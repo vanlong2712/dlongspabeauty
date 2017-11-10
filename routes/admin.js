@@ -17,7 +17,7 @@ const dbUser = require('../model/user');
 router.get('/', (req, res, next) => {
   authenticateAdmin(req, res);
 
-  res.render('admin/index', { title: 'Beauty Spa', req: req });
+  res.render('admin/index', { title: 'Beauty Spa', req: req, page: '' });
 });
 
 /* START USER/ADMIN */
@@ -26,7 +26,7 @@ router
   .get((req, res, next) => {
     authenticateAdmin(req, res);
     priviledgeAdmin(req, res);
-    res.render('admin/admin-create', { req: req });
+    res.render('admin/admin-create', { req: req, page: 'admin-create' });
   })
   .post(async (req, res, next) => {
     authenticateAdmin(req, res);
@@ -90,7 +90,11 @@ router.get('/admin-list', (req, res, next) => {
   priviledgeAdmin(req, res);
 
   dbUser.find({ role: 1 }).then(data => {
-    res.render('admin/admin-list', { data: data, req: req });
+    res.render('admin/admin-list', {
+      data: data,
+      req: req,
+      page: 'admin-list'
+    });
   });
 });
 
@@ -121,7 +125,11 @@ router.get('/admin-edit/:id', (req, res, next) => {
     if (err) {
       console.log(err);
     }
-    res.render('admin/admin-edit', { data: data, req: req });
+    res.render('admin/admin-edit', {
+      data: data,
+      req: req,
+      page: 'admin-edit'
+    });
   });
 });
 

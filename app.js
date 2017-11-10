@@ -17,8 +17,7 @@ var users = require('./routes/users');
 var admin = require('./routes/admin');
 var login_admin = require('./routes/login_admin');
 var admin_service = require('./routes/admin_service');
-
-// global.httpLinkAdmin = 'https://spabeauty.herokuapp.com/187_admin';
+var admin_category = require('./routes/admin_category');
 
 var app = express();
 
@@ -53,6 +52,7 @@ app.use('/users', users);
 app.use('/187_admin', admin);
 app.use('/187_admin', login_admin);
 app.use('/187_admin', admin_service);
+app.use('/187_admin', admin_category);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

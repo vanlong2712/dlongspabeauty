@@ -173,34 +173,14 @@
 $(document).ready(function() {
   $('#language').on('click', function() {
     var language = $(this).attr('data');
-    console.log(language);
     var url = $(this).attr('url');
-    $.get('./changeLanguage/' + language).then(
+    $.get('/changeLanguage/' + language).then(
       () => (window.location.href = url)
     );
   });
 
-  // $('#price_filter').on('change', function() {
-  //   console.log('change');
-  // });
-  // var element = document.getElementsByClassName('v');
-  // var timeout = null;
-  // new ResizeSensor(element, function() {
-  //   clearTimeout(timeout);
-  //   timeout = setTimeout(function() {
-  //     console.log('scrolling stopped');
-  //   }, 1000);
-  // });
-  var erd = elementResizeDetectorMaker();
-
-  // erd.listenTo(document.getElementsByClassName('v'), function(element) {
-  //   var width = element.offsetWidth;
-  //   var height = element.offsetHeight;
-  //   console.log('Size: ' + width + 'x' + height);
-  // });
-
-  $('i.v').resize(function() {
-    console.log('change');
+  $('.jslider-pointer').on('mouseup', function() {
+    console.log($('#price_filter').val());
   });
 
   $('.input-group.date')

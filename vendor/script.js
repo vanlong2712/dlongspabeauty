@@ -1,5 +1,4 @@
 var checkLanguage = (req, res, staticLanguage) => {
-  // console.log('checkLanguage', req.cookies.language);
   if (!req.cookies.language) {
     res.cookie('language', 'vn');
     return staticLanguage.vn;

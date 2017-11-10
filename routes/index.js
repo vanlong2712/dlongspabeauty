@@ -15,6 +15,7 @@ router.get('/', async (req, res, next) => {
   services.map((item, index) => {
     languageService(req, item);
   });
+
   res.render('index', {
     title: title,
     req: req,
@@ -44,6 +45,7 @@ router.get('/services', async (req, res, next) => {
 router.get('/service/:shortid', async (req, res, next) => {
   const static = checkLanguage(req, res, staticLanguage);
   var service = await Service.findOne({ shortid: req.params.shortid });
+  languageService(req, service);
   res.render('service_details', {
     title: title,
     req: req,
@@ -55,7 +57,7 @@ router.get('/service/:shortid', async (req, res, next) => {
 /* GET SHOP PAGE */
 router.get('/shop', async (req, res, next) => {
   const static = checkLanguage(req, res, staticLanguage);
-  // var service = await Service.findOne({ shortid: req.params.shortid });
+
   res.render('shop', {
     title: title,
     req: req,
@@ -66,7 +68,7 @@ router.get('/shop', async (req, res, next) => {
 /* GET PRODUCT PAGE */
 router.get('/product', async (req, res, next) => {
   const static = checkLanguage(req, res, staticLanguage);
-  // var service = await Service.findOne({ shortid: req.params.shortid });
+
   res.render('product_details', {
     title: title,
     req: req,
@@ -85,7 +87,7 @@ router.get('/changeLanguage/:language', (req, res, next) => {
 /* BlOGS */
 router.get('/blogs', (req, res, next) => {
   const static = checkLanguage(req, res, staticLanguage);
-  // var service = await Service.findOne({ shortid: req.params.shortid });
+
   res.render('blogs', {
     title: title,
     req: req,
@@ -96,7 +98,6 @@ router.get('/blogs', (req, res, next) => {
 /* BlOGS */
 router.get('/blog', (req, res, next) => {
   const static = checkLanguage(req, res, staticLanguage);
-  // var service = await Service.findOne({ shortid: req.params.shortid });
   res.render('blog_details', {
     title: title,
     req: req,
@@ -107,7 +108,6 @@ router.get('/blog', (req, res, next) => {
 /* CONTACT */
 router.get('/contact', (req, res, next) => {
   const static = checkLanguage(req, res, staticLanguage);
-  // var service = await Service.findOne({ shortid: req.params.shortid });
   res.render('contact', {
     title: title,
     req: req,

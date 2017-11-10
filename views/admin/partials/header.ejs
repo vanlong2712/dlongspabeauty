@@ -302,24 +302,36 @@
             <!-- sidebar menu start-->
             <ul class="sidebar-menu" id="nav-accordion">
                 <li class="sub-menu">
-                    <a href="javascript:;" >
+                    <a href="javascript:;" class="<%- (page == 'service-create' || page == 'service-list' || page == 'service-edit') ? 'active' : '' %>">
                         <i class="fa fa-laptop"></i>
                         <span>Dịch vụ</span>
                     </a>
                     <ul class="sub">
-                        <li><a  href="/187_admin/service-list">Danh Sách Dịch Vụ</a></li>
-                        <li><a  href="/187_admin/service-create">Tạo Dịch Vụ</a></li>
+                        <li class="<%- (page == 'service-list') ? 'active' : '' %>"><a  href="/187_admin/service-list">Danh Sách Dịch Vụ</a></li>
+                        <li class="<%- (page == 'service-create') ? 'active' : '' %>"> <a  href="/187_admin/service-create">Tạo Dịch Vụ</a></li>
                     </ul>
                 </li>
 
                 <li class="sub-menu">
-                    <a href="javascript:;" >
+                    <a href="javascript:;" class="<%- (page == 'admin-create' || page == 'admin-list' || page == 'admin-edit') ? 'active' : '' %>" >
                         <i class="fa fa-laptop"></i>
-                        <span>Quản Lí Người Dùng</span>
+                        <span>Quản Lí Admin</span>
                     </a>
                     <ul class="sub">
-                      <li><a  href="/187_admin/admin-list">Danh Sách Admin</a></li>
-                      <li><a  href="/187_admin/admin-create">Tạo Admin</a></li>
+                      <li class="<%- (page == 'admin-list') ? 'active' : '' %>"><a  href="/187_admin/admin-list">Danh Sách Admin</a></li>
+                      <li class="<%- (page == 'admin-create') ? 'active' : '' %>"><a   href="/187_admin/admin-create">Tạo Admin</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu">
+                    <a href="javascript:;" class="<%- (page == 'category-create' || page == 'category-list' || page == 'category-edit' || page == 'category-children-create' || page == 'category-children-edit') ? 'active' : '' %>" >
+                        <i class="fa fa-laptop"></i>
+                        <span>Danh Mục Sản Phẩm</span>
+                    </a>
+                    <ul class="sub">
+                      <li class="<%- (page == 'category-list') ? 'active' : '' %>"><a  href="/187_admin/category-list">Danh Sách Danh Mục</a></li>
+                      <li class="<%- (page == 'category-create') ? 'active' : '' %>"><a   href="/187_admin/category-create">Tạo Danh Mục Cha</a></li>
+                      <li class="<%- (page == 'category-children-create') ? 'active' : '' %>"><a   href="/187_admin/category-children-create">Tạo Danh Mục Con</a></li>
                     </ul>
                 </li>
 
