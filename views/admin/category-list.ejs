@@ -1,0 +1,59 @@
+<%- include partials/header %>
+
+<div class="row">
+  <div>
+    <section class="panel">
+      <header class="panel-heading">
+        Danh Sách Danh Mục Sản Phẩm
+      </header>
+    </section>
+  </div>
+</div>
+
+<div class="row">
+<%
+  categories.forEach((item, index) => {
+    %>
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-heading">
+                <%= item.name_vn %>
+
+                <span class="tools pull-right">
+                  <span style="margin-right: 40px">
+                    <%= item.created_by.lastName %> <%= item.created_by.firstName %>
+                  </span>
+                    <a href="/187_admin/category-edit/<%= item._id %>"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>
+                    <a href="/187_admin/category-delete/<%= item._id %>"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>
+                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                </span>
+            </div>
+            <div class="panel-body" style="display: block;">
+              <div id="FlatTree" class="tree tree-plus-minus">
+                <% item.children.forEach((child, index2) => {
+                  %>
+                  <div class="tree-item" style="display: block;">
+                      <i class="tree-dot"></i>
+                      <div class="tree-item-name"><%= child.name_vn %></div>
+                      <span class="pull-right">
+                        <span style="margin-right: 40px">
+                          <%= child.created_by.lastName %> <%= child.created_by.firstName %>
+                        </span>
+                        <a href="/187_admin/category-children-edit/<%= child._id %>"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>
+                        <a href="/187_admin/category-children-delete/<%= child._id %>"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>
+                      </span>
+                  </div>
+                  <%
+                }) %>
+              </div>
+            </div>
+        </div>
+    </div>
+     <%
+  })
+%>
+
+</div>
+
+<!--footer start-->
+<%- include partials/footer %>

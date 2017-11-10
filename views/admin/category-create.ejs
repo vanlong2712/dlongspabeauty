@@ -1,0 +1,38 @@
+<%- include partials/header %>
+
+
+  <div class="row">
+      <div>
+          <section class="panel">
+              <header class="panel-heading">
+                  Tạo Danh Mục Sản Phẩm Cha
+              </header>
+              <div class="panel-body ">
+
+                  <span style="font-size: 18px;color:red">* : yêu cầu</span>
+                  <form action="./category-create" method="POST">
+                      <div class="col-lg-6">
+                          <div class="form-group">
+                              <label for="txtCategoryNameVN">Tên Danh Mục(VN)  <span style="color:red">*</span></label>
+                              <input type="text" class="form-control" name="txtCategoryNameVN" placeholder="Nước Hoa" value="<%- (typeof category != 'undefined') ? category.name_vn : '' %>" required/>
+                          </div>
+                          <div class="form-group">
+                              <label for="txtCategoryNameEN">Tên Danh Mục(EN)  <span style="color:red">*</span></label>
+                              <input type="text" class="form-control" name="txtCategoryNameEN" placeholder="Perfume" value="<%- (typeof category != 'undefined') ? category.name_en : '' %>" required/>
+                          </div>
+                      </div>
+                      <div class="col-lg-12">
+                          <input type="submit" name="btnSubmit" class="btn btn-info" id="pulsate-regular" value="Tạo Danh Mục Sản Phẩm">
+                      </div>
+                  </form>
+              </div>
+          </section>
+
+      </div>
+
+  </div>
+
+
+
+<!--footer start-->
+<%- include partials/footer %>
