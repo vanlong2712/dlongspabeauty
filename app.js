@@ -18,6 +18,7 @@ var admin = require('./routes/admin');
 var login_admin = require('./routes/login_admin');
 var admin_service = require('./routes/admin_service');
 var admin_category = require('./routes/admin_category');
+var admin_product = require('./routes/admin_product');
 
 var app = express();
 
@@ -53,6 +54,7 @@ app.use('/187_admin', admin);
 app.use('/187_admin', login_admin);
 app.use('/187_admin', admin_service);
 app.use('/187_admin', admin_category);
+app.use('/187_admin', admin_product);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

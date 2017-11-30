@@ -39,6 +39,7 @@
                         <span style="margin-right: 40px">
                           <%= child.created_by.lastName %> <%= child.created_by.firstName %>
                         </span>
+                        <a href="/187_admin/create-product/<%= child._id %>"><button class="btn btn-success btn-xs">Thêm sản phẩm</button></a>
                         <a href="/187_admin/category-children-edit/<%= child._id %>"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>
                         <a href="/187_admin/category-children-delete/<%= child._id %>"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>
                       </span>
